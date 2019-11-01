@@ -183,7 +183,7 @@ ICON_BIB_HOLDINGS_ITEMS=<span id="ICON_BIB_HOLDINGS_ITEMS">View Copies</span>
 ICON_BIB_PAGING_CAPTION=<span id="ICON_BIB_PAGING_CAPTION"></span>
 ICON_BIB_PAGING_NEXT=<div class="button80" id="ICON_BIB_PAGING_NEXT">Next Record</div>
 ICON_BIB_PAGING_PREV=<div class="button80" id="ICON_BIB_PAGING_PREV">Previous Record</div>
-ICON_RECORDLINK=<div id="ICON_RECORDLINK"><a href="%s">%s</a></div>
+ICON_RECORDLINK=<div id="ICON_RECORDLINK"><a href="%s"><i class="fas fa-link"></i>&nbsp;&nbsp;Permanent Link to this Record</a></div>
 LINK856TEXT=Connect to
 MARC=yes
 SHOWOREC=no_cdate
