@@ -29,14 +29,12 @@ obj.submit();
 }
 /* ]]> */
 </script>
-<script type="text/javascript" src="/screens/iiilangswitch.js"></script> 
+<script type="text/javascript" src="/screens/iiilangswitch.js"></script>
 </head>
 <body>
 <!--{toplogo}-->
 
 <div class="pageContentInner mainSearch">
-
-<h1 class="accessibleAddInfo">Search</h1>
 
 <div id="accessibleForm" class="form1Part">
 <div class="browseSearchtool">
@@ -52,11 +50,16 @@ obj.submit();
 <label for="searchtype" class="accessibleAddInfo">Search type</label>
 <select name="searchtype" id="searchtype" onchange="document.forms[0].searcharg.focus();">
 <option value="X" selected="selected">Keyword</option>
-<option value="t">Title</option>
-<option value="s">Journal Title</option>
-<option value="a">Author</option>
-<option value="d">Subject</option>
-<option value="y">Resource Name</option>
+<option value="t"> Title</option>
+<option value="a"> Author</option>
+<option value="d"> Subject</option>
+<option value="j"> Journal Title</option>
+<option value="s"> Series</option>
+<option value="v"> Genre</option>
+<option value="c"> Call no.</option>
+<option value="b"> Barcode</option>
+<option value="i"> ISBN/ISSN</option>
+<option value="o"> Control no.</option>
 </select>
 <!--{nosort}-->
 <label for="searcharg" class="accessibleAddInfo">Search term</label>
@@ -81,7 +84,47 @@ obj.submit();
 <div class="mainMenuAdvSearch"><a href="/search/X">Advanced Search</a></div>
 </div><!-- browseSearchtool -->
 </div><!-- form1Part -->
-
+<div class="row">
+  <div class="col-lg-4 col-sm-6 mb-4">
+  <div>
+    <div class="card-body">
+      <i class="main-icons fas fa-user-circle fa-lg" aria-label="My Account"></i>
+      <h2 class="card-title">
+        Library Account<hr>
+      </h2>
+      <p class="card-text">Borrow and renew books, videos, and more.</p>
+    <a class="btn btn-primary" href="https://library.pratt.edu//policies">Borrowing Policies&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
+    <a class="btn btn-primary" href="/patroninfo~S0" target="_blank">Renew Books</a>
+</div>
+  </div>
+</div>
+<div class="col-lg-4 col-sm-6 mb-4">
+      <div>
+        <div class="card-body">
+          <i class="fas fa-globe main-icons fa-lg"></i>
+          <h2 class="card-title">
+            ConnectNY<hr>
+          </h2>
+          <p class="card-text">Request books outside of the Pratt Collections with quick delivery and a loan period of 42 days.</p>
+        <a class="btn btn-primary" href="https://libguides.pratt.edu/interlibraryloan/cny-faq">FAQ</a>
+        <a class="btn btn-primary" href="http://connectny.info/" target="_blank">Request a book&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
+		</div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 mb-4">
+  <div>
+    <div class="card-body">
+      <i class="fas fa-lock main-icons fa-lg"></i>
+      <h2 class="card-title">
+        Course Reserves<hr>
+      </h2>
+      <p class="card-text">Professors <a href="https://pratt.libwizard.com/id/e6f85793dfbf5ad8d38a1b99ee7bc382" target="blank">place books on reserve</a> at the library so that you have access to them all semester.</p><br>
+    <a class="btn btn-primary" href="search/p" target="_blank">Search by Professor&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
+    <a class="btn btn-primary" href="search/r" target="_blank">Search by Class&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
+</div>
+  </div>
+</div>
+</div>
 <div class="mainMenuContent">
 <div class="mainMenuContentLeft">
 
