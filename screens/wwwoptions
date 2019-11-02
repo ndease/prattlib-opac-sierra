@@ -123,7 +123,7 @@ ICON_BUT_UNLIMAVAIL=<div class="btn btn-primary" id="ICON_BUT_UNLIMAVAIL">Show A
 DISPLAY_245=atd
 EXTENDED=CT
 HEADING_LENGTH=100
-ICON_856LINK=<span id="ICON_856LINK">View Online Content</span>
+ICON_856LINK=<span id="ICON_856LINK"><i class="fas fa-angle-right"></i>&nbsp;&nbsp;View Online Content</span>
 ICON_962LINK=<span id="ICON_962LINK">Digital Image</span>
 #ICON_BOOKCART=<div class="btn btn-primary">Add to Bag Briefcit</div>
 ICON_BOOKCART_SAVED=<div class="btn btn-primary" id="ICON_BOOKCART_SAVED">Remove From Bag</div>
@@ -191,7 +191,7 @@ TABLEPARAM_BIB_DETAIL=width="100%" border="0" cellspacing="0" cellpadding="0" na
 TABLEPARAM_BIB_HOLDINGS=width="100%" cellspacing="0" cellpadding="0" border="1" name="tableparam_bib_holdings"
 TABLEPARAM_BIB_HOLDS=width="100%" cellspacing="0" cellpadding="0" border="1" name="tableparam_bib_holds"
 TABLEPARAM_BIB_INFO=width="100%" border="1" cellspacing="0" cellpadding="0" name="tableparam_bib_info"
-TABLEPARAM_BIB_ITEMS=width="100%" border="0" cellspacing="0" cellpadding="0" name="tableparam_bib_items"
+TABLEPARAM_BIB_ITEMS=class="table" name="tableparam_bib_items"
 TABLEPARAM_BIB_LINKS=width="100%" border="0" cellspacing="0" cellpadding="0" name="tableparam_bib_links"
 TABLEPARAM_BIB_ORDER=width="100%" border="0" cellspacing="0" cellpadding="0" name="tableparam_bib_order"
 TABLEPARAM_BIB_PAGER=border="0" name="tableparam_bib_pager"

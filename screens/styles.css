@@ -177,7 +177,7 @@ a:hover  { color: #0E5667; text-decoration: underline; }
 
 .bibDisplayContentMore { border-top:1px solid #767C70; clear:both; margin-bottom:15px; padding-top:20px; }
 
-.bibDisplayItems  { margin:8px 0px 0px 8px; width:100%; }
+.bibDisplayItems  { width:100%; }
 .bibDisplayItems table { border:0; se; margin-bottom:20px; }
 */ .bibDisplayItems th { color:#767C70; } */
 .bibDisplayItems td { border-top:1px solid #ECECEC; border-bottom:none; vertical-align:top; }
@@ -201,7 +201,7 @@ a:hover  { color: #0E5667; text-decoration: underline; }
 
 bibDisplayTitle { display:inline; }
 
-.bibDisplayUrls{
+.bibDisplayUrls .bibLinks{
   padding: .75rem 1.25rem;
 margin-bottom: 1rem;
 border: 1px solid transparent;
@@ -356,14 +356,15 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 /* Brief Citation display styles */
 
-.briefcitActions { text-align:left;
+.briefcitActions #ICON_856LINK{
+  text-align:left;
   padding: .75rem 1.25rem;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
   border: 1px solid transparent;
   border-radius: .25rem;
-  color: #155724;
   background-color: #d4edda;
   border-color: #c3e6cb;
+  display:block;
  }
 
 .briefcitAddlCopies { font-size:90%; }
