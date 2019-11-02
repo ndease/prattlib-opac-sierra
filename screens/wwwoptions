@@ -123,8 +123,8 @@ ICON_BUT_UNLIMAVAIL=<div class="btn btn-primary" id="ICON_BUT_UNLIMAVAIL">Show A
 DISPLAY_245=atd
 EXTENDED=CT
 HEADING_LENGTH=100
-ICON_856LINK=<span id="ICON_856LINK"><img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Website</span>
-ICON_962LINK=<span id="ICON_962LINK"><img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Digital Image</span>
+ICON_856LINK=<span id="ICON_856LINK">View Online Content</span>
+ICON_962LINK=<span id="ICON_962LINK">Digital Image</span>
 #ICON_BOOKCART=<div class="btn btn-primary">Add to Bag Briefcit</div>
 ICON_BOOKCART_SAVED=<div class="btn btn-primary" id="ICON_BOOKCART_SAVED">Remove From Bag</div>
 ICON_FULLRECORD=<span id="ICON_FULLRECORD">See Full Record</span>

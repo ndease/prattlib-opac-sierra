@@ -356,7 +356,15 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 /* Brief Citation display styles */
 
-.briefcitActions { text-align:left; }
+.briefcitActions { text-align:left;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+ }
 
 .briefcitAddlCopies { font-size:90%; }
 .briefcitAddlCopies { margin: 10px 10px 30px 3px; }
