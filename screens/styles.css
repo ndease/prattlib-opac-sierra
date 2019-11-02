@@ -170,14 +170,14 @@ a:hover  { color: #0E5667; text-decoration: underline; }
 #bibDisplayBody { background:none; }
 
 .bibDisplayContent { padding:10px 0 10px 10px; border: solid 1px #00FF00; }
-.bibDisplayContentMain { float:left; width:59%; margin-left:1.5em; display:inline; }
+.bibDisplayContentMain { float:left; width:100%; margin-left:1.5em; display:inline; }
 .bibDisplayContentMain > a { margin:4px 4px 4px 9%; border:none; }
 .bibDisplayContentMain table { border:0; font-size:.8824em; }
 .bibDisplayContentMain table table { font-size:1em; }
 
 .bibDisplayContentMore { border-top:1px solid #767C70; clear:both; margin-bottom:15px; padding-top:20px; }
 
-.bibDisplayItems  { margin:8px 0px 0px 8px; width:80%; }
+.bibDisplayItems  { margin:8px 0px 0px 8px; width:100%; }
 .bibDisplayItems table { border:0; se; margin-bottom:20px; }
 */ .bibDisplayItems th { color:#767C70; } */
 .bibDisplayItems td { border-top:1px solid #ECECEC; border-bottom:none; vertical-align:top; }
@@ -185,7 +185,7 @@ a:hover  { color: #0E5667; text-decoration: underline; }
 */ remove .bibDisplayItemsHeader { font-size:.8333em; float:left; margin:.5em 0 0 5%; } */
 .bibDisplayItemsHeader h2 { color:#F7960C; font-size:1.2em; margin:0; }
 
-.bibDisplayItemsMain { float:right; width:80%; }
+.bibDisplayItemsMain { float:right; width:100%; }
 
 .bibDisplayJacket  { float:left; margin:0 0 1em 5%; display:inline; width:6em; }
 
