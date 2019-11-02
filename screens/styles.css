@@ -263,7 +263,15 @@ table.bibResourceTable { border:0; }
 
 .bibResourceTableHeader { background:#E0E0E0; color:#767C70; line-height:41px; text-align:center; }
 
-.bibSearch { border-color:#BDBDBD; border-style:solid; border-width:0 0 1px 0; margin-top:4px; text-align:center; }
+.bibSearch {
+    background-color: #E0E0E0;
+    border-radius: 8px;
+    font-size: .9em;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 0px;
+    margin-top:4px;
+    text-align:center; }
 
 .bibSearch form { margin:3px 0px; }
 
@@ -485,7 +493,13 @@ table.browseResourceTable { border:0; }
 
 .browseSearchtool  td { border:none; }
 
-.browseSearchtool { border-color:#BDBDBD; border-style:solid; border-width:0 0 1px 0; font-size:.9em; padding:0; }
+.browseSearchtool {
+  background-color: #E0E0E0;
+    border-radius: 8px;
+    font-size: .9em;
+    padding: 20px;
+    margin-bottom: 5px;
+    border: 0px; }
 .browseSearchtool form { margin:0; }
 
 .browseSearchtool input { margin:1px 1px 3px 1px; }
