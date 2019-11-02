@@ -47,7 +47,7 @@ body > font { background:#FFFFFF; margin-left:3px; }
 
 body > br { line-height:0px; }
 
-body > div { background:#FFFFFF; padding-bottom:10px; padding-top:10px; }
+body > div { padding-bottom:10px; padding-top:10px; }
 
 body > div.mylistsSavePage { background:none; padding-bottom:0px; padding-top:0px; }
 
