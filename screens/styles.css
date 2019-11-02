@@ -170,7 +170,7 @@ a:hover  { color: #0E5667; text-decoration: underline; }
 #bibDisplayBody { background:none; }
 
 .bibDisplayContent { padding:10px 0 10px 10px; border: solid 1px #00FF00; }
-.bibDisplayContentMain { float:left; width:100%; margin-left:1.5em; display:inline; }
+.bibDisplayContentMain { float:left; width:100%; display:inline; }
 .bibDisplayContentMain > a { margin:4px 4px 4px 9%; border:none; }
 .bibDisplayContentMain table { border:0; font-size:.8824em; }
 .bibDisplayContentMain table table { font-size:1em; }
