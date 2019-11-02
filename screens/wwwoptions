@@ -115,8 +115,8 @@ BODYPARAM=bgcolor="#FFFFFF"
 BRIEF=A
 BROWSE_t=245/abhnp/0|240/afklmnopr/0|700/tmnr/0|970/t/0|/abhnpv/0
 BROWSE_HEADERS=Mark|Media
-ICON_BUT_BRIEF=<div class="btn btn-primary" id="ICON_BUT_BRIEF">Brief Display</div>
-ICON_BUT_EXTENDED=<div class="btn btn-primary" id="ICON_BUT_EXTENDED">Extended Display</div>
+#ICON_BUT_BRIEF=<div class="btn btn-primary" id="ICON_BUT_BRIEF">Brief Display</div>
+#ICON_BUT_EXTENDED=<div class="btn btn-primary" id="ICON_BUT_EXTENDED">Extended Display</div>
 ICON_BUT_LIMAVAIL=<div class="btn btn-primary" id="ICON_BUT_LIMAVAIL">Limit to Available</div>
 ICON_BUT_LIMIT=<div class="btn btn-primary" id="ICON_BUT_LIMIT">Limit/Sort Search</div>
 ICON_BUT_UNLIMAVAIL=<div class="btn btn-primary" id="ICON_BUT_UNLIMAVAIL">Show All</div>
