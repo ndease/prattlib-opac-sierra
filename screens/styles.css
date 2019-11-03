@@ -222,7 +222,7 @@ border-color: #c3e6cb;
 
 .bibInfo { margin-bottom:10px; }
 
-.bibInfoData { vertical-align:top; font-size: 100%; }
+.bibInfoData { vertical-align:top; font-size: 1rem; }
 
 .bibInfoLabel { color:#767C70; padding-right:20px; text-align:right; vertical-align:top; font-weight:bold; font-style:normal; }
 
