@@ -1,3 +1,4 @@
+
 <!--{toplogo}-->
 <!-- start ifbibdisplay token -->
 <!--{ifbibdisplay}-->
@@ -6,29 +7,67 @@
 <!-- start catedit token -->
 <!--{catedit}-->
 <!-- end catedit token -->
-<div class="container">
 
 <div id="bibDisplayBody">
 
+<div class="navigationRowRecord">
+<!-- start navrow token -->
+<!--{navrow}-->
+<!-- end navrow token -->
+</div> <!-- navigationRowRecord -->
+
 <div id="bibDisplayContent">
 
-
-
-<div class="bibClear"></div>
 <div class="bibSearch">
 <!-- start searchtool token -->
 <!--{searchtool}-->
 <!-- end searchtool token -->
+<div class="bibSearchHistory">
+<form>
+<!-- start searchhistory token -->
+<!--{searchhistory}-->
+<!-- end searchhistory token -->
+</form>
+</div> <!-- bibSearchHistory -->
 </div> <!-- bibSearch -->
-<div class="row">
-  <div class="col-lg-9">
+
+<div class="bibPager">
+<!-- start pager token -->
+<!--{pager}-->
+<!-- end pager token -->
+</div> <!-- bibPager -->
+
+<div class="bibClear"></div>
+
+<div class="bibResourceSidebar">
+<!-- start resourcetable token -->
+<!--{ifhasresourcetable}-->
+<!--{resourcetable}-->
+<!--{xif}-->
+<!-- end resourcetable token -->
+
+<!--Optional INNReach resources.-->
+<!-- start innreach token -->
+<!--{innreach}-->
+<!-- end innreach token -->
+<!-- start relsearch token -->
+<!--{relsearch}-->
+<!-- end relsearch token -->
+</div> <!-- bibResourceSidebar -->
+
+<div class="bibDisplayJacket">
+<!-- start bibimage token -->
+<!--{bibimage}-->
+<!-- end bibimage token -->
+<div class="bibMedia">
+<!-- start media token -->
+<!--{media}-->
+<!-- end media token -->
+</div> <!-- bibMedia -->
+</div> <!-- bibDisplayJacket -->
 
 <div class="bibDisplayContentMain">
-  <div class="bibDisplayJacket">
-  <!-- start bibimage token -->
-  <!--{bibimage}-->
-  <!-- end bibimage token -->
-  </div> <!-- bibDisplayJacket -->
+
 
 <div class="bibDisplayTitle">
 <!-- start recordinfo:t token -->
@@ -144,25 +183,6 @@
 
 <div class="bibClear"></div>
 
-
-
-
-<div class="clear"></div>
-</div><!--endOfCol-lg-9 -->
-
-<div class="col-lg-3">
-<div class="navigationRowRecord">
-<!-- start navrow token -->
-<!--{navrow}-->
-<!-- end navrow token -->
-<!--Optional INNReach resources.-->
-<!-- start innreach token -->
-<!--{innreach}-->
-<!-- end innreach token -->
-</div> <!-- navigationRowRecord -->
-</div>
-</div><!--endOfRow -->
-</div><!-- bibDisplayContent -->
 <div class="bibPager">
 <!-- start pager token -->
 <!--{pager}-->
@@ -170,9 +190,10 @@
 </div> <!-- bibPager -->
 
 <div class="bibClear"></div>
-</div><!-- bibDisplayBody -->
 
-</div> <!--endOfContainer-->
+</div><!-- bibDisplayContent -->
+<div class="clear"></div>
+</div><!-- bibDisplayBody -->
 <!-- start botlogo token -->
 <!--{botlogo}-->
 <!-- end botlogo token -->
