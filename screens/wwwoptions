@@ -191,7 +191,7 @@ TABLEPARAM_BIB_DETAIL=width="100%" border="0" cellspacing="0" cellpadding="0" na
 TABLEPARAM_BIB_HOLDINGS=width="100%" cellspacing="0" cellpadding="0" border="1" name="tableparam_bib_holdings"
 TABLEPARAM_BIB_HOLDS=width="100%" cellspacing="0" cellpadding="0" border="1" name="tableparam_bib_holds"
 TABLEPARAM_BIB_INFO=width="100%" border="1" cellspacing="0" cellpadding="0" name="tableparam_bib_info"
-TABLEPARAM_BIB_ITEMS=class="table" name="tableparam_bib_items"
+TABLEPARAM_BIB_ITEMS=class="table table-responsive-sm" name="tableparam_bib_items"
 TABLEPARAM_BIB_LINKS=width="100%" border="0" cellspacing="0" cellpadding="0" name="tableparam_bib_links"
 TABLEPARAM_BIB_ORDER=width="100%" border="0" cellspacing="0" cellpadding="0" name="tableparam_bib_order"
 TABLEPARAM_BIB_PAGER=border="0" name="tableparam_bib_pager"

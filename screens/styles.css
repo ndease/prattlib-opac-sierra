@@ -235,9 +235,9 @@ border-color: #c3e6cb;
 */ Items table in briefcit and bib display */
 .bibItems { vertical-align:top; background:none; }
 
-.bibItemsHeader th { text-align:left; font-size: 90%; color:#000000; background: #E0E0E0; padding:2px; border: solid 1px #E0E0E0; }
+.bibItemsHeader th { text-align:left; font-size: 90%; color:#000000; background: #e9ecef; padding:2px; border: solid 1px #e9ecef; }
 
-.bibItemsEntry { text-align:left; font-size: 90%; padding:2px; border: solid 1px #E0E0E0; background:none; }
+.bibItemsEntry { text-align:left; font-size: 90%; padding:2px; border: solid 1px #e9ecef; background:none; }
 
 .bibLinks th { text-align:center; }
 
@@ -276,7 +276,7 @@ table.bibResourceTable { border:0; }
 .bibResourceTableHeader { background:#E0E0E0; color:#767C70; line-height:41px; text-align:center; }
 
 .bibSearch {
-    background-color: #E0E0E0;
+    background-color: ##e9ecef;
     border-radius: 8px;
     font-size: .9em;
     padding: 20px;
@@ -541,7 +541,7 @@ td.browseSubEntryMedia { color:#878787; font-size:.7em; line-height:.95em; margi
 .browseSubEntryMedia { padding-bottom:.4em; }
 .browseSubEntryMedia { font-size:.9187em; }
 
-.browseSuperEntry  { background:#FFFFFF; border-bottom:1px solid #BDBDBD; margin:0; text-align:center; }
+.browseSuperEntry  { background:#FFFFFF; border-bottom:1px solid #BDBDBD; margin:0; text-align:center; display:none; }
 
 h1.browseSuperEntryTitle { font-size:1.1em; display:inline; }
 
@@ -833,18 +833,24 @@ div .confirmValue { padding-top:3px; }
 
 /**N**/
 
-.navigationRow { margin:0; font-size:80% }
-.navigationRow a:link { color: #267385; font-weight:bold; padding:6px 5px 3px 0px; text-decoration:none; width:auto; }
-.navigationRow a:visited { color: #267385; font-weight:bold; padding:6px 5px 3px 0px; text-decoration:none; width:auto; }
+/*.navigationRow { margin:0; font-size:80% }
+.navigationRow a:link { color: black; font-weight:bold; padding:6px 5px 3px 0px; text-decoration:none; width:auto; }
+.navigationRow a:visited { color: black; font-weight:bold; padding:6px 5px 3px 0px; text-decoration:none; width:auto; }
 .navigationRow a:active { text-decoration:underline; }
-.navigationRow a:hover { text-decoration:underline; }
+.navigationRow a:hover { text-decoration:underline; }*/
 .navigationRow { clear:both; text-align:center; }
 .navigationRow > form { margin-top:5px; margin-bottom:0; }
 .navigationRow noscript h2 { font-size:1em; margin:-3px 10px 0 0; color:#FF0000; }
 .navigationRow select { position:absolute; right:24px; top:30px; width:200px; }
 .navigationRow option { position:absolute; right:24px; top:30px; }
 
-.navigationRowRecord { clear:both; text-align:center; font-size:80%; }
+.navigationRowRecord { clear: both;
+    text-align: center;
+    font-size: 80%;
+    margin-top: 50px;
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 8px; }
 
 .navigationRowNoForm { margin-top:5px; margin-bottom:0; }
 
@@ -1334,9 +1340,3 @@ tr.highlight { background:#9CCAD5; }
 .patActionsLinks a:hover { text-decoration:underline; }
 
 .patHR { border: 1px; background-color: #F5F5F5; height: 1px; }
-
-@media (max-width:600px){
-  td{
-    width:100%;
-  }
-}
