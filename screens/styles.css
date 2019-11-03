@@ -1334,3 +1334,9 @@ tr.highlight { background:#9CCAD5; }
 .patActionsLinks a:hover { text-decoration:underline; }
 
 .patHR { border: 1px; background-color: #F5F5F5; height: 1px; }
+
+@media (max-width:600px){
+  td{
+    width:100%;
+  }
+}
