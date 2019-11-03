@@ -189,6 +189,12 @@ a:hover  { color: #0E5667; text-decoration: underline; }
 
 .bibDisplayJacket  { float:left; margin:0 0 1em 5%; display:inline; width:6em; }
 
+@media (max-width:600px){
+  .bibDisplayJacket{
+    display:none !important;
+  }
+}
+
 .bibDisplayPermLink { float:right; font-size:80%; }
 
 .bibDisplayProgramInfo { font-size:1.1em; margin:5% 5% 15px 0; }
@@ -238,6 +244,12 @@ border-color: #c3e6cb;
 .bibMedia  { margin-left:auto; margin-right:auto; }
 .bibMedia   img { margin-top:10px;  }
 .bibMedia { color:#878787; font-size:.7em; line-height:.95em; margin-top:6em; overflow:hidden; width:60px; text-align:center; }
+
+@media (max-width:600px){
+  .bibMedia{
+    display:none !important;
+  }
+}
 
 .bibPager a:visited { color: #267385; font-weight:bold; padding:6px 5px 3px 0px; text-decoration:none; width:auto; }
 .bibPager a:link { color: #267385; font-weight:bold; padding:6px 5px 3px 0px; text-decoration:none; width:auto; }
@@ -384,7 +396,13 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitBookcartMark {  }
 
-.briefcitCell { background:none; border-top:1px solid #E0E0E0; border-bottom:1px solid #E0E0E0; padding: 20px; }
+.briefcitCell { background:none; border-top:1px solid #E0E0E0; border-bottom:1px solid #E0E0E0;}
+
+@media (max-width:600px){
+  .briefcitCell{
+    padding: 20px;
+  }
+}
 
 .briefcitClear { clear:both; }
 
@@ -412,11 +430,23 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitJacket  { float:left; margin: 20px 45px; width:80px; display:inline; }
 
-.briefcitLeft { display:inline; float:left; margin-bottom:30px; padding:0; text-align:left; width:41px; border: solid 1px #FF; }
+/*@media (max-width:600px){
+  .briefcitJacket{
+    display:none !important;
+  }
+} */
+
+.briefcitLeft { display:inline; float:left; margin-bottom:30px; padding:0; text-align:left; border: solid 1px #FF; }
 
 .briefcitMark { float:right; font-size:80%; font-weight:bold; }
 
 .briefcitMedia { color:#878787; font-size:.7em; line-height:.95em; margin-top:6em; overflow:hidden; width:60px; text-align:center; }
+
+@media (max-width:600px){
+  .briefcitMedia{
+    display:none !important;
+  }
+}
 
 .briefcitMediaEnd { display:none; }
 
@@ -434,7 +464,7 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 .briefcitResourceMedia { margin-top:6em; text-align:center; }
 .briefcitResourceRecordButton { padding:5px; font-size:80%; font-weight:bold; }
 
-.briefcitRow { padding-left:5%; width:100%; }
+.briefcitRow { width:100%; }
 
 .briefcitProgramMedia { color:#878787; font-size:.7em; line-height:.95em; margin-top:6em; overflow:hidden; width:60px; text-align:center; }
 .briefcitProgramNote { font-style: italic; }

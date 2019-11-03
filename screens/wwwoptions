@@ -91,7 +91,7 @@ OFFER_HISTORY=true
 # Advanced Searching
 AVS_MODIFY_TAG=X
 AVS_TAG=XYZ
-#ICON_BUT_SHOWSIM=<div class="btn btn-primary" id="ICON_BUT_SHOWSIM">More Like This</div>
+ICON_BUT_SHOWSIM=<div class="btn btn-primary" id="ICON_BUT_SHOWSIM">More Like This</div>
 #ICON_REL_GROUP_1=<span id="ICON_REL_GROUP_1"><img src="/screens/relevance5.gif" alt="Most relevant">&nbsp;<h1 class="browseSuperEntryTitle">Most relevant titles</h1>&nbsp;</span>
 #ICON_REL_GROUP_2=<span id="ICON_REL_GROUP_2"><img src="/screens/relevance4.gif" alt="Highly relevant">&nbsp;<h1 class="browseSuperEntryTitle">Highly relevant titles</h1>&nbsp;a</span>
 #ICON_REL_GROUP_3=<span id="ICON_REL_GROUP_3"><img src="/screens/relevance3.gif" alt="Very relevant">&nbsp;<h1 class="browseSuperEntryTitle">Very relevant titles</h1>&nbsp;</span>
