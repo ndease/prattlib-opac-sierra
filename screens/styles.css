@@ -390,7 +390,7 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitBookcartMark {  }
 
-.briefcitCell { background:none; border-top:1px solid #e8f2f9; border-bottom:1px solid #e8f2f9; padding: 20px;}
+.briefcitCell { background:none; border-top:1px solid #e9ecef; border-bottom:1px solid #e9ecef; padding: 20px;}
 
 .briefcitClear { clear:both; }
 
@@ -469,12 +469,12 @@ td.browseEntryMedia { color:#878787; font-size:.7em; line-height:.95em; margin-t
 
 .browseEntryRelGroup1 { margin:0; }
 
-.browseHeaderData { background: #e8f2f9; border-bottom:1px solid #ECECEC; font-weight:normal; margin:0; padding-left:10px; text-align:left; }
-.browseHeaderEntries { background: #e8f2f9; border-bottom:1px solid #ECECEC; font-weight:normal; margin:0; padding-left:10px; text-align:left; }
-.browseHeaderMark { background: #e8f2f9; border-bottom:1px solid #ECECEC; font-weight:normal; margin:0; padding-left:10px; text-align:left; }
-.browseHeaderNum { background: #e8f2f9; border-bottom:1px solid #ECECEC; font-weight:normal; margin:0; padding-left:10px; text-align:left; }
-.browseHeaderYear { background: #e8f2f9; border-bottom:1px solid #ECECEC; font-weight:normal; margin:0; padding-left:10px; text-align:left; }
-.browseHeaderMedia { background: #e8f2f9; border-bottom:1px solid #ECECEC; font-weight:normal; margin:0; padding-left:10px; text-align:left; }
+.browseHeaderData { background: #e9ecef; border-bottom:1px solid #ECECEC; font-weight:normal; margin:0; padding-left:10px; text-align:left; }
+.browseHeaderEntries { background: #e9ecef; border-bottom:1px solid #ECECEC; font-weight:normal; margin:0; padding-left:10px; text-align:left; }
+.browseHeaderMark { background: #e9ecef; border-bottom:1px solid #ECECEC; font-weight:normal; margin:0; padding-left:10px; text-align:left; }
+.browseHeaderNum { background: #e9ecef; border-bottom:1px solid #ECECEC; font-weight:normal; margin:0; padding-left:10px; text-align:left; }
+.browseHeaderYear { background: #e9ecef; border-bottom:1px solid #ECECEC; font-weight:normal; margin:0; padding-left:10px; text-align:left; }
+.browseHeaderMedia { background: #e9ecef; border-bottom:1px solid #ECECEC; font-weight:normal; margin:0; padding-left:10px; text-align:left; }
 
 .browsePager { font-size:.8824em; font-weight:bold; padding:8px 1px 5px 1px; }
 .browsePager td { position:absolute; left:-999px; width:auto; margin:0; }
@@ -506,7 +506,7 @@ table.browseResourceTable { border:0; }
 .browseSearchtool  td { border:none; }
 
 .browseSearchtool {
-  background-color: #e8f2f9;
+  background-color: #e9ecef;
     border-radius: 8px;
     font-size: .9em;
     padding: 20px;
@@ -1263,7 +1263,7 @@ td.tipsTable { text-align:left; }
 
 td.odd { background:#F5F5F5; }
 
-td.highlight { background:#E8F2F9; }
+td.highlight { background:#e9ecef; }
 
 /* for browse entries */
 
