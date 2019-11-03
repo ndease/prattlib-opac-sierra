@@ -189,12 +189,6 @@ a:hover  { color: #0E5667; text-decoration: underline; }
 
 .bibDisplayJacket  { float:left; margin:0 0 1em 5%; display:inline; width:6em; }
 
-@media (max-width:600px){
-  .bibDisplayJacket{
-    display:none !important;
-  }
-}
-
 .bibDisplayPermLink { float:right; font-size:80%; }
 
 .bibDisplayProgramInfo { font-size:1.1em; margin:5% 5% 15px 0; }
@@ -396,13 +390,7 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitBookcartMark {  }
 
-.briefcitCell { background:none; border-top:1px solid #E0E0E0; border-bottom:1px solid #E0E0E0;}
-
-@media (max-width:600px){
-  .briefcitCell{
-    padding: 20px;
-  }
-}
+.briefcitCell { background:none; border-top:1px solid #e8f2f9; border-bottom:1px solid #e8f2f9; padding: 20px;}
 
 .briefcitClear { clear:both; }
 
@@ -429,12 +417,6 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 .briefcitItemsMain { float:left; width:85%; }
 
 .briefcitJacket  { float:left; margin: 20px 45px; width:80px; display:inline; }
-
-/*@media (max-width:600px){
-  .briefcitJacket{
-    display:none !important;
-  }
-} */
 
 .briefcitLeft { display:inline; float:left; margin-bottom:30px; padding:0; text-align:left; border: solid 1px #FF; }
 
@@ -524,7 +506,7 @@ table.browseResourceTable { border:0; }
 .browseSearchtool  td { border:none; }
 
 .browseSearchtool {
-  background-color: #E0E0E0;
+  background-color: #e8f2f9;
     border-radius: 8px;
     font-size: .9em;
     padding: 20px;
