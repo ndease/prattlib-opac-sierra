@@ -40,7 +40,7 @@ For 10pt, apply .7353em
 
 body { font-family:Arial,Helvetica,Verdana,"Trebuchet MS",sans-serif; font-size:100%; font-style:normal; font-weight: normal; text-align:center; width:100%; margin-top:0px; background:#FFFFFF }
 
-body.bodybg { background:#FFFFFF; color: #616161; }
+body.bodybg { background:#FFFFFF; }
 
 /* Generated popup body */
 body > font { background:#FFFFFF; margin-left:3px; }
@@ -204,12 +204,28 @@ bibDisplayTitle { display:inline; }
 .bibDisplayUrls .bibLinks{
   padding: .75rem 1.25rem;
 margin-bottom: 1rem;
-border: 1px solid transparent;
 border-radius: .25rem;
-color: #155724;
-background-color: #d4edda;
-border-color: #c3e6cb;
+background-color:rgb(255,  185,  0);
 }
+
+.bibLinks a{
+  color: black !important;
+  text-decoration: underline !important;
+}
+
+.SMsearchbtn{
+  background-color:rgb(255,  185,  0) !important;
+  color:black !important;
+  text-shadow:none !important;
+  box shadow: none !important;
+  padding:8px 6px !important;
+}
+
+.SMsearchbtn:hover{
+  background-color:black !important;
+  color:white !important;
+}
+
 .bibDisplayUrls table { border:0; font-size:.8824em; }
 .bibDisplayUrls table table { font-size:1em; }
 
@@ -374,11 +390,13 @@ div.bookingsVerify { padding:0; margin-top:18px; }
   text-align:left;
   padding: .75rem 1.25rem;
   margin-top: 1rem;
-  border: 1px solid transparent;
   border-radius: .25rem;
-  background-color: #d4edda;
-  border-color: #c3e6cb;
+  background-color: #FFB900;
   display:block;
+ }
+
+ .briefcitActions > a{
+   color:black !important;
  }
 
 .briefcitAddlCopies { font-size:90%; }
