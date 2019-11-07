@@ -236,7 +236,7 @@ MY_LISTS=true
 ICON_MYLISTS=<span id="ICON_MYLISTS">My Lists</span>
 ICON_MYLISTS_EXPORT=<div class="btn btn-primary" id="ICON_MYLISTS_EXPORT">Export List</div>
 ICON_MYLISTS_MOVE=<div class="btn btn-primary" id="ICON_MYLISTS_MOVE">Move Marked</div>
-ICON_MYLISTS_REQUEST=<div class="btn btn-primary" id="ICON_MYLISTS_REQUEST">Request</div>
+ICON_MYLISTS_REQUEST=<div class="btn btn-primary" id="ICON_MYLISTS_REQUEST">Place a Hold</div>
 ICON_MYLISTS_REMOVE_DUPLICATES=<div class="btn btn-primary" id="ICON_MYLISTS_REMOVE_DUPLICATES">Remove Duplicates</div>
 ICON_MYLISTS_RENAME=<div class="btn btn-primary" id="ICON_MYLISTS_RENAME">Change Name/Description</div>
 ICON_MYLISTS_SAVE=<div class="btn btn-primary" id="ICON_MYLISTS_SAVE">Add to My Lists</div>
