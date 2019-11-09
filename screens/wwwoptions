@@ -134,8 +134,8 @@ ICON_PAGING_NEXT=<span id="ICON_PAGING_NEXT">Next</span>
 ICON_PAGING_PREV=<span id="ICON_PAGING_PREV">Prev</span>
 ICON_PROGRAM=<span id="ICON_PROGRAM"><img src="/screens/media_program.gif" border="0" alt="Library Event"></span>
 ICON_RESOURCE=<span id="ICON_RESOURCE"><img src="/screens/media_resource.gif" alt="Internet Resource"></span>
-ICON_SAVEALLPAGE=<div class="btn btn-primary" id="ICON_SAVEALLPAGE">Add All On Page</div>
-ICON_SAVEMARKED=<div class="btn btn-primary" id="ICON_SAVEMARKED">Add Marked to Bag</div>
+ICON_SAVEALLPAGE=<div class="btn btn-primary" id="ICON_SAVEALLPAGE">Save All Records</div>
+ICON_SAVEMARKED=<div class="btn btn-primary" id="ICON_SAVEMARKED">Save Marked Records</div>
 IMAGE_MATTYPE-=/screens/media_book.gif
 IMAGE_MATTYPEa=/screens/media_book.gif
 IMAGE_MATTYPEb=/screens/media_archive.gif
@@ -263,7 +263,7 @@ ICON_BUT_REQUEST_ALL=<div class="btn btn-primary" id="ICON_BUT_REQUEST_ALL">Requ
 ICON_BUT_REQUEST_MULTI=<div class="btn btn-primary" id="ICON_BUT_REQUEST_MULTI">Request Saved</div>
 ICON_BUT_REQUEST_RESET=<div class="btn btn-primary" id="ICON_BUT_REQUEST_RESET">Reset Form</div>
 ICON_BUT_REQUEST_SELECTED=<div class="btn btn-primary" id="ICON_BUT_REQUEST_SELECTED">Request Selected</div>
-ICON_REQUEST=<div class="btn btn-primary" id="ICON_REQUEST">Request</div>
+ICON_REQUEST=<div class="btn btn-primary" id="ICON_REQUEST">Place Hold</div>
 #REQFILLTIME=14|<br>Request available in approximately %d days|<br>Current estimated availability: approximately %d days|<br>This material may be immediately available
 REQUEST=Hold this item|bib|ask|Y
 REQUEST_ARTICLE_IFCHKIN=Y
