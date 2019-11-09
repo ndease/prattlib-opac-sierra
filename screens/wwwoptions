@@ -407,7 +407,7 @@ FEATURED_LIST=01,02,03,117|FEATURED LISTS|CATEGORY|# of Titles
 
 # Content Linking and Other Resources
 # If your system uses SSL, use the https example, to avoid secure/nonsecure warning on Internet Explorer.
-BIBIMAGE=https://contentcafe2.btol.com/ContentCafe/Jacket.aspx?UserID=Innovative&Password=Goldengate&Return=1&Type=S&Value=%s|I|https://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=Innovative&amp;Password=Goldengate&amp;ItemKey=%s&amp;Options=N&amp;erroroverride=1
+BIBIMAGE=https://contentcafe2.btol.com/ContentCafe/Jacket.aspx?UserID=Innovative&Password=Goldengate&Return=1&Type=S&Value=%s&amp;erroroverride=1|I|https://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=Innovative&amp;Password=Goldengate&amp;ItemKey=%s&amp;Options=N&amp;erroroverride=1
 #BIBIMAGE=http://contentcafe2.btol.com/ContentCafe/Jacket.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;Return=T&amp;Type=S&amp;Value=%s&amp;erroroverride=1|I|http://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;ItemKey=%s&amp;Options=Y
 #BIBIMAGE=https://contentcafe2.btol.com/ContentCafe/Jacket.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;Return=T&amp;Type=S&amp;Value=%s&amp;erroroverride=1|I|https://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;ItemKey=%s&amp;Options=Y
 BIBIMAGE_TEXT=Book Cover
