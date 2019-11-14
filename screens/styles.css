@@ -434,7 +434,7 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitItemsMain { float:left; width:85%; }
 
-.briefcitJacket  { float:left; margin: 20px 45px; width:80px; display:inline; }
+.briefcitJacket  { float:left; margin: 30px; width:80px; display:inline; }
 
 .briefcitLeft { display:inline; float:left; margin-bottom:30px; padding:0; text-align:left; border: solid 1px #FF; }
 
@@ -1340,3 +1340,15 @@ tr.highlight { background:#9CCAD5; }
 .patActionsLinks a:hover { text-decoration:underline; }
 
 .patHR { border: 1px; background-color: #F5F5F5; height: 1px; }
+
+/*Fix INNReach button*/
+#cnyLink > a{
+    color: black !important;
+    font-weight: normal !important;
+    padding: .375rem .75rem !important;
+}
+#cnyLink:hover > a{
+    color: white !important;
+    font-weight: normal !important;
+    padding: .375rem .75rem !important;
+}
