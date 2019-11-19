@@ -1352,3 +1352,12 @@ tr.highlight { background:#9CCAD5; }
     font-weight: normal !important;
     padding: .375rem .75rem !important;
 }
+
+.header-link{
+  color:black !important;
+}
+
+.header-link:hover{
+      color: #0C77D4!important;
+      text-decoration:none !important;
+}

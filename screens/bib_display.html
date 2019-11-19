@@ -11,13 +11,12 @@
   window.onload=addCNY;
 
   var cnyLink = document.getElementById("cnyLink");
-  
+
   function addCNY(){
   $('td:contains("DUE")').append( $(cnyLink));
   $('td:contains("MISSING")').append( $(cnyLink));
   $('td:contains("ON SEARCH")').append( $(cnyLink));
   $('td:contains("IN TRANSIT")').append( $(cnyLink));
-  $('td:contains("LIB USE ONLY")').append( $(cnyLink));
   $('td:contains("LOST")').append( $(cnyLink));
   $('td:contains("CLMS RETD")').append( $(cnyLink));
   $('td:contains("OFF CAMPUS")').append( $(cnyLink));

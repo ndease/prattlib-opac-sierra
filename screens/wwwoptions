@@ -114,13 +114,14 @@ AUTHMSG_SR=athe later heading|bthe earlier heading|dthe full form of the heading
 BODYPARAM=bgcolor="#FFFFFF"
 BRIEF=A
 BROWSE_t=245/abhnp/0|240/afklmnopr/0|700/tmnr/0|970/t/0|/abhnpv/0
+BROWSE_d=600/a-z/|610/a-z/|611/a-z/|630/a-z/|647/a-z/|648/a-z/|650/a-z/|651/a-z/|653/a-z/|654/a-z/|655/a-z/|656/a-z/|657/a-z/|658/a-z/|662/a-z/|690/a-z/
 BROWSE_HEADERS=Mark|Media
 #ICON_BUT_BRIEF=<div class="btn btn-primary" id="ICON_BUT_BRIEF">Brief Display</div>
 #ICON_BUT_EXTENDED=<div class="btn btn-primary" id="ICON_BUT_EXTENDED">Extended Display</div>
 ICON_BUT_LIMAVAIL=<div class="btn btn-primary" id="ICON_BUT_LIMAVAIL">Limit to Available</div>
 ICON_BUT_LIMIT=<div class="btn btn-primary" id="ICON_BUT_LIMIT">Limit/Sort Search</div>
 ICON_BUT_UNLIMAVAIL=<div class="btn btn-primary" id="ICON_BUT_UNLIMAVAIL">Show All</div>
-DISPLAY_245=atd
+#DISPLAY_245=atd
 EXTENDED=CT
 HEADING_LENGTH=100
 ICON_856LINK=<span id="ICON_856LINK"><i class="fas fa-angle-right"></i>&nbsp;&nbsp;View Online Content</span>
