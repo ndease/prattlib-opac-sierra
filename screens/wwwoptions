@@ -79,7 +79,7 @@ STAFF_LOGGEDIN_MSG=<span class="loggedInMessage">You are logged into staff mode 
 # General and Phrase Searching
 ICON_BUT_ANOTHER=<div class="btn btn-primary" id="ICON_BUT_ANOTHER">Another Search</div>
 ICON_BUT_NEWSRCH=<div class="btn btn-primary" id="ICON_BUT_NEWSRCH">Start Over</div>
-ICON_BUT_WORDSRCH=<div class="btn btn-primary" id="ICON_BUT_WORDSRCH">Search as Words</div>
+ICON_BUT_WORDSRCH=<div id="ICON_BUT_WORDSRCH">Search as Words</div>
 DROP_DOWN=Xatdc
 FRAMEURL=0
 IBROWSE_MAX=10000
@@ -119,7 +119,7 @@ BROWSE_HEADERS=Mark|Media
 #ICON_BUT_BRIEF=<div class="btn btn-primary" id="ICON_BUT_BRIEF">Brief Display</div>
 #ICON_BUT_EXTENDED=<div class="btn btn-primary" id="ICON_BUT_EXTENDED">Extended Display</div>
 ICON_BUT_LIMAVAIL=<div class="btn btn-primary" id="ICON_BUT_LIMAVAIL">Limit to Available</div>
-ICON_BUT_LIMIT=<div class="btn btn-primary" id="ICON_BUT_LIMIT">Limit/Sort Search</div>
+ICON_BUT_LIMIT=<div id="ICON_BUT_LIMIT">Limit/Sort Search</div>
 ICON_BUT_UNLIMAVAIL=<div class="btn btn-primary" id="ICON_BUT_UNLIMAVAIL">Show All</div>
 #DISPLAY_245=atd
 EXTENDED=CT
@@ -135,8 +135,8 @@ ICON_PAGING_NEXT=<span id="ICON_PAGING_NEXT">Next</span>
 ICON_PAGING_PREV=<span id="ICON_PAGING_PREV">Prev</span>
 ICON_PROGRAM=<span id="ICON_PROGRAM"><img src="/screens/media_program.gif" border="0" alt="Library Event"></span>
 ICON_RESOURCE=<span id="ICON_RESOURCE"><img src="/screens/media_resource.gif" alt="Internet Resource"></span>
-ICON_SAVEALLPAGE=<div class="btn btn-primary" id="ICON_SAVEALLPAGE">Save All Records</div>
-ICON_SAVEMARKED=<div class="btn btn-primary" id="ICON_SAVEMARKED">Save Marked Records</div>
+ICON_SAVEALLPAGE=<div class="btn btn-primary" id="ICON_SAVEALLPAGE">Save All</div>
+ICON_SAVEMARKED=<div class="btn btn-primary" id="ICON_SAVEMARKED">Save Selected</div>
 IMAGE_MATTYPE-=/screens/media_book.gif
 IMAGE_MATTYPEa=/screens/media_book.gif
 IMAGE_MATTYPEb=/screens/media_archive.gif
@@ -241,7 +241,7 @@ ICON_MYLISTS_REQUEST=<div class="btn btn-primary" id="ICON_MYLISTS_REQUEST">Requ
 ICON_MYLISTS_REMOVE_DUPLICATES=<div class="btn btn-primary" id="ICON_MYLISTS_REMOVE_DUPLICATES">Remove Duplicates</div>
 ICON_MYLISTS_RENAME=<div class="btn btn-primary" id="ICON_MYLISTS_RENAME">Change Name/Description</div>
 ICON_MYLISTS_SAVE=<div class="btn btn-primary" id="ICON_MYLISTS_SAVE">Add to My Lists</div>
-ICON_MYLISTS_SAVE_TO_LIST=<div class="btn btn-primary" id="ICON_MYLISTS_SAVE_TO_LIST">Add Marked to My Lists</div>
+ICON_MYLISTS_SAVE_TO_LIST=<div class="btn btn-primary" id="ICON_MYLISTS_SAVE_TO_LIST">Add to My Lists</div>
 ICON_MYLISTS_BRIEF=<div class="btn btn-primary" id="ICON_MYLISTS_BRIEF">Add to My Lists</div>
 ICON_BACK_TO_MYLISTS=<div class="btn btn-primary" id="ICON_BACK_TO_MYLISTS">Back to My Lists</div>
 ICON_MYLISTS_RECORD=<div class="btn btn-primary" id="ICON_MYLISTS_RECORD">Add to My Lists</div>

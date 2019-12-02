@@ -1361,3 +1361,128 @@ tr.highlight { background:#9CCAD5; }
       color: #0C77D4!important;
       text-decoration:none !important;
 }
+/*hide search history select*/
+.navigationRow select {
+  display: none !important;
+}
+
+/*display links as buttons on NavigationRow*/
+.navigationRow a {
+  margin: 2px;
+border-width: 1px !important;
+border-color: black !important;
+border-radius: 0px !important;
+background-color: white !important;
+color: black !important;
+font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
+display: inline-block;
+font-weight: 400;
+color: #212529;
+text-align: center;
+vertical-align: middle;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+background-color: transparent;
+border: 1px solid transparent;
+padding: .375rem .75rem;
+font-size: 1rem;
+line-height: 1.5;
+border-radius: .25rem;
+transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+
+.navigationRow a:hover {
+  margin: 2px;
+border-width: 1px !important;
+border-color: black !important;
+border-radius: 0px !important;
+background-color: #0090D0 !important;
+color: white !important;
+font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
+text-decoration: none !important;
+}
+
+.navigationRowRecord a {
+  margin: 2px;
+border-width: 1px !important;
+border-color: black !important;
+border-radius: 0px !important;
+background-color: white !important;
+color: black !important;
+font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
+display: inline-block;
+font-weight: 400;
+color: #212529;
+text-align: center;
+vertical-align: middle;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+background-color: transparent;
+border: 1px solid transparent;
+padding: .375rem .75rem;
+font-size: 1rem;
+line-height: 1.5;
+border-radius: .25rem;
+transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+
+.navigationRowRecord a:hover {
+  margin: 2px;
+border-width: 1px !important;
+border-color: black !important;
+border-radius: 0px !important;
+background-color: #0090D0 !important;
+color: white !important;
+font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
+text-decoration: none !important;
+}
+
+
+@media (max-width:600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+.browseSaveJump{
+  height: auto !important;
+}
+
+.briefcitDetail{
+  width:100%;
+}
+
+.sm-checked{
+  width:100%;
+}
+
+  tr .bibItemsHeader{
+    position: absolute !important;
+        top: -9999px !important;
+        left: -9999px !important;
+  }
+
+.table td, .table th {
+  border-top:none !important;
+}
+
+ td{
+    width:100%;
+  }
+
+  .bibItemsEntry{
+    border:none !important;
+  }
+
+ .bibItemsEntry > td:nth-of-type(1):before { content: "Location"; font-weight: bold;}
+ .bibItemsEntry > td:nth-of-type(2):before { content: "Call No."; font-weight: bold;}
+ .bibItemsEntry > td:nth-of-type(3):before { content: "Notes"; font-weight: bold;}
+ .bibItemsEntry > td:nth-of-type(4):before { content: "Status"; font-weight: bold;}
+
+ .table tr:nth-child(odd) {background: #e9ecef}
+}
