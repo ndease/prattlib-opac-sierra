@@ -38,8 +38,9 @@ For 10pt, apply .7353em
 /* Section 1 */
 /*Global tag styles*/
 
-body { font-family:Arial,Helvetica,Verdana,"Trebuchet MS",sans-serif; font-size:100%; font-style:normal; font-weight: normal; text-align:center; width:100%; margin-top:0px; background:#FFFFFF }
+body { font-family: "LyonRegular", Helvetica, Arial, sans-serif; !important; font-size:100%; font-style:normal; font-weight: normal; text-align:center; width:100%; margin-top:0px; background:#FFFFFF }
 
+td { font-family: "LyonRegular", Helvetica, Arial, sans-serif !important;}
 body.bodybg { background:#FFFFFF; }
 
 /* Generated popup body */
@@ -245,9 +246,9 @@ background-color:rgb(255,  185,  0);
 */ Items table in briefcit and bib display */
 .bibItems { vertical-align:top; background:none; }
 
-.bibItemsHeader th { text-align:left; font-size: 90%; color:#000000; background: #e9ecef; padding:2px; border: solid 1px #e9ecef; }
+.bibItemsHeader th { text-align:left; font-size: 90%; color:#000000; background: #E4E5E6; padding:2px; border: solid 1px #E4E5E6; }
 
-.bibItemsEntry { text-align:left; font-size: 90%; padding:2px; border: solid 1px #e9ecef; background:none; }
+.bibItemsEntry { text-align:left; font-size: 90%; padding:2px; border: solid 1px #E4E5E6; background:none; }
 
 .bibLinks th { text-align:center; }
 
@@ -286,7 +287,7 @@ table.bibResourceTable { border:0; }
 .bibResourceTableHeader { background:#E0E0E0; color:#767C70; line-height:41px; text-align:center; }
 
 .bibSearch {
-    background-color: ##e9ecef;
+    background-color: ##E4E5E6;
     border-radius: 8px;
     font-size: .9em;
     padding: 20px;
@@ -392,6 +393,7 @@ div.bookingsVerify { padding:0; margin-top:18px; }
   margin-top: 1rem;
   border-radius: .25rem;
   background-color: #FFB900;
+  font-family: "ApercuRegular", Helvetica, Arial, sans-serif !important;
   display:block;
  }
 
@@ -408,7 +410,7 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitBookcartMark {  }
 
-.briefcitCell { background:none; border-top:1px solid #e9ecef; border-bottom:1px solid #e9ecef; padding: 20px;}
+.briefcitCell { background:none; border-top:1px solid #E4E5E6; border-bottom:1px solid #E4E5E6; padding: 20px;}
 
 .briefcitClear { clear:both; }
 
@@ -487,12 +489,12 @@ td.browseEntryMedia { color:#878787; font-size:.7em; line-height:.95em; margin-t
 
 .browseEntryRelGroup1 { margin:0; }
 
-.browseHeaderData { background: #e9ecef; border-bottom:1px solid #ECECEC; font-weight:normal; margin:0; padding-left:10px; text-align:left; }
-.browseHeaderEntries { background: #e9ecef; border-bottom:1px solid #ECECEC; font-weight:normal; margin:0; padding-left:10px; text-align:left; }
-.browseHeaderMark { background: #e9ecef; border-bottom:1px solid #ECECEC; font-weight:normal; margin:0; padding-left:10px; text-align:left; }
-.browseHeaderNum { background: #e9ecef; border-bottom:1px solid #ECECEC; font-weight:normal; margin:0; padding-left:10px; text-align:left; }
-.browseHeaderYear { background: #e9ecef; border-bottom:1px solid #ECECEC; font-weight:normal; margin:0; padding-left:10px; text-align:left; }
-.browseHeaderMedia { background: #e9ecef; border-bottom:1px solid #ECECEC; font-weight:normal; margin:0; padding-left:10px; text-align:left; }
+.browseHeaderData { background: #E4E5E6; border-bottom:1px solid #ECECEC; font-weight:normal; margin:0; padding-left:10px; text-align:left; }
+.browseHeaderEntries { background: #E4E5E6; border-bottom:1px solid #ECECEC; font-weight:normal; margin:0; padding-left:10px; text-align:left; }
+.browseHeaderMark { background: #E4E5E6; border-bottom:1px solid #ECECEC; font-weight:normal; margin:0; padding-left:10px; text-align:left; }
+.browseHeaderNum { background: #E4E5E6; border-bottom:1px solid #ECECEC; font-weight:normal; margin:0; padding-left:10px; text-align:left; }
+.browseHeaderYear { background: #E4E5E6; border-bottom:1px solid #ECECEC; font-weight:normal; margin:0; padding-left:10px; text-align:left; }
+.browseHeaderMedia { background: #E4E5E6; border-bottom:1px solid #ECECEC; font-weight:normal; margin:0; padding-left:10px; text-align:left; }
 
 .browsePager { font-size:.8824em; font-weight:bold; padding:8px 1px 5px 1px; }
 .browsePager td { position:absolute; left:-999px; width:auto; margin:0; }
@@ -524,7 +526,7 @@ table.browseResourceTable { border:0; }
 .browseSearchtool  td { border:none; }
 
 .browseSearchtool {
-  background-color: #e9ecef;
+  background-color: #E4E5E6;
     border-radius: 8px;
     font-size: .9em;
     padding: 20px;
@@ -848,7 +850,7 @@ div .confirmValue { padding-top:3px; }
     text-align: center;
     font-size: 80%;
     margin-top: 50px;
-    background-color: #e9ecef;
+    background-color: #E4E5E6;
     padding: 10px;
     border-radius: 8px; }
 
@@ -1281,7 +1283,7 @@ td.tipsTable { text-align:left; }
 
 td.odd { background:#F5F5F5; }
 
-td.highlight { background:#e9ecef; }
+td.highlight { background:#E4E5E6; }
 
 /* for browse entries */
 
@@ -1341,7 +1343,7 @@ tr.highlight { background:#9CCAD5; }
 
 .patHR { border: 1px; background-color: #F5F5F5; height: 1px; }
 
-/*Fix INNReach button*/
+/*Fix INNReach button
 #cnyLink > a{
     color: black !important;
     font-weight: normal !important;
@@ -1352,7 +1354,7 @@ tr.highlight { background:#9CCAD5; }
     font-weight: normal !important;
     padding: .375rem .75rem !important;
 }
-
+*/
 .header-link{
   color:black !important;
 }
@@ -1364,6 +1366,40 @@ tr.highlight { background:#9CCAD5; }
 /*hide search history select*/
 .navigationRow select {
   display: none !important;
+}
+
+ .bibItemsEntry > td{
+   font-family: "ApercuRegular", Helvetica, Arial, sans-serif !important;
+   font-size:1rem;
+ }
+ .bibInfoLabel{
+   font-family: "ApercuRegular", Helvetica, Arial, sans-serif !important;
+   font-size:1rem;
+ }
+
+.bibInfoData a {
+    color: #000000 !important;
+    padding: 2px;
+    border-bottom: 1px solid #0C77D4;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #0C77D4;
+    box-shadow: inset 0 -1px 0 #0C77D4;
+    text-decoration: none;
+    font-weight: normal !important;
+}
+
+.bibInfoData a:hover {
+  color: #FFFFFF !important;
+	background-color: #0C77D4;
+	padding: 2px;
+  text-decoration: none;
+  transition: background .15s cubic-bezier(.33,.66,.66,1);
+    transition-property: background;
+    transition-duration: 0.15s;
+    transition-timing-function: cubic-bezier(0.33, 0.66, 0.66, 1);
+    transition-delay: 0s;
+
 }
 
 /*display links as buttons on NavigationRow*/
@@ -1386,11 +1422,10 @@ vertical-align: middle;
 user-select: none;
 background-color: transparent;
 border: 1px solid transparent;
-padding: .375rem .75rem;
-font-size: 1rem;
-line-height: 1.5;
-border-radius: .25rem;
-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+padding: .375rem .75rem !important;
+font-size: 1rem !important;
+line-height: 1.5 !important;
+transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out !important;
 
 }
 
@@ -1423,12 +1458,11 @@ vertical-align: middle;
 -ms-user-select: none;
 user-select: none;
 background-color: transparent;
-border: 1px solid transparent;
-padding: .375rem .75rem;
-font-size: 1rem;
-line-height: 1.5;
-border-radius: .25rem;
-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+border: 1px solid black !important;
+padding: .375rem .75rem !important;
+font-size: 1rem !important;
+line-height: 1.5 !important;
+transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out !important;
 
 }
 
@@ -1483,6 +1517,5 @@ text-decoration: none !important;
  .bibItemsEntry > td:nth-of-type(2):before { content: "Call No."; font-weight: bold;}
  .bibItemsEntry > td:nth-of-type(3):before { content: "Notes"; font-weight: bold;}
  .bibItemsEntry > td:nth-of-type(4):before { content: "Status"; font-weight: bold;}
-
- .table tr:nth-child(odd) {background: #e9ecef}
+ .table tr{background-color:#E4E5E6; border-radius: 5px; margin-bottom:1rem; }
 }
