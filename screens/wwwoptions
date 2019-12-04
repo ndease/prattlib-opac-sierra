@@ -388,7 +388,7 @@ ILL_HOME=/screens/ill.html
 
 # INN-Reach
 IR_PLACEMENT=1
-INNREACH=Search Other NY Libraries@connectny.info(X=X*;Y=Y*;Z=Z*;a=a;t=t;c=l;d=d;o=o;j=t;i=i)
+INNREACH=Search ConnectNY@connectny.info(X=X*;Y=Y*;Z=Z*;a=a;t=t;c=l;d=d;o=o;j=t;i=i)
 # Media Management
 ICON_BUT_RET2CRS=<div   id="ICON_BUT_RET2CRS">Return to Course</div>
 ERESERVE=[0123456789]
