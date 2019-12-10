@@ -1523,10 +1523,6 @@ text-decoration: none !important;
  .bibItemsEntry > td:nth-of-type(3):before { content: "Notes"; font-weight: bold;}
  .bibItemsEntry > td:nth-of-type(4):before { content: "Status"; font-weight: bold;}
  .table tr{background-color:#E4E5E6; border-radius: 5px; margin-bottom:1rem; }
-
- table, thead, tbody, th, td, tr .browseHeader {
-     display: inline;
- }
 }
 
 .search-panel{
