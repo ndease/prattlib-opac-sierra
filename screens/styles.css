@@ -111,7 +111,7 @@ a:hover  { color: #0E5667; text-decoration: underline; }
 /* Section 2 */
 /* named styles listed in alphabetical order */
 
-/**A**/
+/**A
 #accessibleForm { font-family:"Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; }
 #accessibleForm fieldset { border: 1px solid #CCCCCC; }
 #accessibleForm form legend { font-weight:bold; }
@@ -124,9 +124,9 @@ a:hover  { color: #0E5667; text-decoration: underline; }
 #accessibleForm p { margin-bottom:5px; margin-top:3px; }
 #accessibleForm ul { margin-left:10px; margin-top:0px; padding-left:15px; }
 #accessibleForm .advancedSearch fieldset fieldset { border:none; padding:0; text-align:left; margin:0 0 6px 0; }
-.accessibleAddInfo { position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden; } /*Include in screenreader but not visible*/
+.accessibleAddInfo { position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden; }
 #accessibleForm .browseSearchtool { background:none; border:none; margin:10px; font-size:1.0em; }
-#accessibleForm .formFieldsetInner { margin-top:12px; }
+#accessibleForm .formFieldsetInner { margin-top:12px; }**/
 
 .actionButtonArea a:link { color: #267385; font-weight:bold; padding:6px 5px 3px 0px; text-decoration:none; width:auto; }
 .actionButtonArea a:visited { color: #267385; font-weight:bold; padding:6px 5px 3px 0px; text-decoration:none; width:auto; }
@@ -188,7 +188,7 @@ a:hover  { color: #0E5667; text-decoration: underline; }
 
 .bibDisplayItemsMain { float:right; width:100%; }
 
-.bibDisplayJacket  {  margin-left:auto; margin-right:auto; display:block; width:50%; }
+.bibDisplayJacket  {  margin-left:auto; margin-right:auto; display:block; width:75%; }
 
 .bibDisplayPermLink { float:right; font-size:80%; }
 
@@ -500,8 +500,8 @@ td.browseEntryMedia { color:#878787; font-size:.7em; line-height:.95em; margin-t
 .browsePager td { position:absolute; left:-999px; width:auto; margin:0; }
 .browsePager td.browsePager {  position:static; }
 .browsePager strong { border:0; padding:5px; margin:2px 1px; color:#267385; background:#FFFFFF; }
-.browsePager a { color:#202020; text-decoration:none; border:1px solid #BDBDBD; padding:0 4px; }
-.browsePager a:hover { background:#267385; color:#FFFFFF; }
+.browsePager a { color:#202020; text-decoration:none; padding:10px; }
+.browsePager a:hover { background:black; color:white !important; }
 
 div.browseResourceTable { background:#FFFFFF; border: solid 1px #E0E0E0; margin:30px 10px 0 12px; padding:0; }
 .browseResourceTable { padding-top:5px; }
@@ -529,10 +529,10 @@ table.browseResourceTable { border:0; }
   background-color: #E4E5E6;
     border-radius: 8px;
     font-size: .9em;
-    padding: 20px;
+    padding: 40px;
     margin-bottom: 1rem;
     margin-top: 1rem;
-    border: 0px; }
+    border: 1px solid lightgray;}
 .browseSearchtool form { margin:0; }
 
 .browseSearchtool input { margin:1px 1px 3px 1px; }
@@ -1445,6 +1445,7 @@ text-decoration: none !important;
 
 .navigationRowRecord a {
   margin: 2px;
+  width: 100% !important;
 border-width: 1px !important;
 border-color: black !important;
 border-radius: 0px !important;
@@ -1481,17 +1482,18 @@ text-decoration: none !important;
 }
 
 
+
 @media (max-width:600px) {
   table, thead, tbody, th, td, tr {
     display: block;
   }
 
-.browseSaveJump{
-  height: auto !important;
-}
-
 .briefcitDetail{
   width:100%;
+}
+
+.browseSaveJump{
+  height: 100% !important;
 }
 
 .sm-checked{
@@ -1521,4 +1523,44 @@ text-decoration: none !important;
  .bibItemsEntry > td:nth-of-type(3):before { content: "Notes"; font-weight: bold;}
  .bibItemsEntry > td:nth-of-type(4):before { content: "Status"; font-weight: bold;}
  .table tr{background-color:#E4E5E6; border-radius: 5px; margin-bottom:1rem; }
+
+ table, thead, tbody, th, td, tr .browseHeader {
+     display: inline;
+ }
+}
+
+.search-panel{
+  padding:10px;
+  padding-top:20px;
+  background-color: #F7F7F7;
+  margin:3%;
+  border-radius:5px;
+  margin-bottom:50px;
+}
+.main-icons{
+  text-align: center;
+  display: block !important;
+  font-size: 30px !important;
+  margin-bottom: 50px;
+}
+
+/*StackMap Fixes*/
+.SMprinter-friendly.no-fa::after {
+    display: none !important;
+}
+
+.SMclose.no-fa::after {
+    display: none !important;
+}
+
+.SMicon.fa-plus-circle.no-fa::after {
+    display: none !important;
+}
+
+.SMicon.fa-minus-circle.no-fa::after {
+  display: none !important;
+}
+
+.SMdirections.no-fa::after{
+  display:none !important;
 }

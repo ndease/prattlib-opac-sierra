@@ -170,6 +170,7 @@ SORT_MEDIA=amcdji
 SUPPRESS_YEAR=False
 TABLEPARAM_BRIEFCIT=true|border="0" cellpadding="0" width="100%" name="tableparam_briefcit"
 TABLEPARAM_BROWSE=width="100%" cellpadding="0" cellspacing="0" border="0" name="tableparam_browse"|align="center" cellpadding="0" cellspacing="0" border="0" name="tableparam_browse"|width="100%" cellpadding="0" cellspacing="0" border="0" name="tableparam_browse"|cellpadding="0" cellspacing="0" border="0" name="tableparam_browse"
+
 # Record Displays
 BIB_TOC_HEADER=<strong>Table of Contents</strong>
 ICON_BUT_MARC_DISPLAY=<div   id="ICON_BUT_MARC_DISPLAY">MARC Display</div>
@@ -186,7 +187,7 @@ ICON_BIB_PAGING_PREV=<div   id="ICON_BIB_PAGING_PREV">Previous Record</div>
 ICON_RECORDLINK=<div id="ICON_RECORDLINK"><a href="%s"><i class="fas fa-link"></i>&nbsp;&nbsp;Permanent Link to this Record</a></div>
 LINK856TEXT=Connect to
 MARC=yes
-SHOWOREC=no_cdate
+SHOWOREC=no_rdate
 TABLEPARAM_BIB=width="100%" cellpadding="0" cellspacing="0" border="0" name="tableparam_bib"|cellpadding="0" cellspacing="0" border="0" align="center" name="tableparam_bib"
 TABLEPARAM_BIB_DETAIL=width="100%" border="0" cellspacing="0" cellpadding="0" name="tableparam_bib_detail"
 TABLEPARAM_BIB_HOLDINGS=width="100%" cellspacing="0" cellpadding="0" border="1" name="tableparam_bib_holdings"
@@ -408,7 +409,7 @@ FEATURED_LIST=01,02,03,117|FEATURED LISTS|CATEGORY|# of Titles
 
 # Content Linking and Other Resources
 # If your system uses SSL, use the https example, to avoid secure/nonsecure warning on Internet Explorer.
-BIBIMAGE=https://contentcafe2.btol.com/ContentCafe/Jacket.aspx?UserID=Innovative&Password=Goldengate&Return=1&Type=S&Value=%s&amp;erroroverride=1|I|https://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=Innovative&amp;Password=Goldengate&amp;ItemKey=%s&amp;Options=N&amp;erroroverride=1
+BIBIMAGE=https://contentcafe2.btol.com/ContentCafe/Jacket.aspx?UserID=Innovative&Password=Goldengate&Return=1&Type=M&Value=%s&amp;erroroverride=1|I|https://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=Innovative&amp;Password=Goldengate&amp;ItemKey=%s&amp;Options=N&amp;erroroverride=1
 #BIBIMAGE=http://contentcafe2.btol.com/ContentCafe/Jacket.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;Return=T&amp;Type=S&amp;Value=%s&amp;erroroverride=1|I|http://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;ItemKey=%s&amp;Options=Y
 #BIBIMAGE=https://contentcafe2.btol.com/ContentCafe/Jacket.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;Return=T&amp;Type=S&amp;Value=%s&amp;erroroverride=1|I|https://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;ItemKey=%s&amp;Options=Y
 BIBIMAGE_TEXT=Book Cover
