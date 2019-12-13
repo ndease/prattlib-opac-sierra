@@ -15,17 +15,54 @@ startTimeout(600000, "/");
 </noscript>
 <meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
 <link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+
+<style>
+td{
+  width: 100%;
+    display: block;
+    padding: .5rem;
+}
+.pageContentInner{
+  background-color: #E4E5E6;
+  border-radius: 8px;
+  border: 1px solid lightgray;
+  padding: 40px;
+}
+legend{
+  font-size:1em !important;
+  font-weight:bold;
+  font-family: "ApercuRegular", Helvetica, Arial, sans-serif !important;
+}
+label{
+  font-size:1em;
+  font-weight:bold;
+  font-family: "ApercuRegular", Helvetica, Arial, sans-serif !important;
+}
+
+#form3PartAdvLimitSort label{
+  float:none;
+  width:100%;
+}
+#form3PartAdvLimitSort select{
+  margin-top:2rem;
+}
+.inner-hr{
+  background-color:lightgray !important;
+}
+</style>
 </head>
 <!--{advancedsearchbody}-->
 <!--{toplogo}-->
-<div class="pageContentInner">
-<h1 class="pageHeader">Advanced Keyword Search</h1>
+<div class="pageContentInner container">
+<h2 class="pageHeader" style="text-align:center;">Advanced Keyword Search</h2>
+<hr class="inner-hr">
 <div class="advmsg">
 <!--{msg}-->
 </div>
 <!--{spellcheck}-->
 <!--{advancedsearchformbegin}-->
-<div class="form3PartAbove"> 
+
+<div class="form3PartAbove">
 <fieldset>
 <legend>Enter Search Terms</legend>
 <br />
@@ -44,59 +81,54 @@ startTimeout(600000, "/");
 </div>
 </fieldset>
 </div> <!-- form3PartAbove -->
-
-
-<p><a href = "javascript:void(0)" onclick = "document.getElementById('lightbox').style.display='block';document.getElementById('fade').style.display='block'">Search Tips</a></p>
-
-
-<div class="formLeft advancedSearch"> 
+<hr class="inner-hr">
+<div class="row">
+<div class="col-lg-4 col-md-6">
 <fieldset>
-<legend>Add Limits (Optional)</legend>
-<br />
-<div class="formEntryArea">
-<!--{availlim}-->
-</div>
-<br />
-<!-- Optional Scopes section -->
-<div class="formEntryArea"> 
-<table><tr>
-<td><label for="searchscope">Library:</label></td>
-<td> 
-<!--{scope}-->
-</td></tr></table>
-</div>
-<br clear="left" />
+
 <div class="formEntryArea">
 <!--{branch}-->
 </div>
-<br clear="left" />
+</div>
+<div class="col-lg-4 col-md-6">
+
 <div class="formEntryArea">
 <!--{mattype}-->
 </div>
-<br clear="left" />
+</div>
+<div class="col-lg-4 col-md-6">
+
 <div class="formEntryArea">
 <!--{lang}-->
 </div>
-<br clear="left" />
-<div class="formEntryArea"> 
+</div>
+</div>
+<hr class="inner-hr">
+<div class="row">
+<div class="col-lg-4 col-md-6">
 <!--{publish}-->
 </div>
-<br clear="left" />
-<div class="formEntryArea" id="form3PartAdvLimitSort">
+
+<div  class="col-lg-4 col-md-6" id="form3PartAdvLimitSort">
 <!--{sort}-->
 </div>
-<br clear="left" />
-<div class="formEntryArea">
-<table><tr>
-<td><label for "docdate">Year:</label></td>
-<td>
+
+<div class="col-lg-4 col-md-6">
 <!--{DOCDATE}-->
-</div>
-</td>
-</tr>
-</table>
-<br clear="left" />
 </div> <!-- div formEntryArea -->
+</div>
+<br>
+<div>
+<!--{availlim}-->
+</div>
+<div class="formButtonArea">
+<span>
+<!--{advancedsubmit}-->
+</span>
+<span>
+<!--{clearform}-->
+</span>
+</div>
 </fieldset>
 <input type="hidden" name="endLimit" >
 
@@ -104,7 +136,7 @@ startTimeout(600000, "/");
 <a href = "javascript:void(0)" onclick = "document.getElementById('lightbox').style.display='none';document.getElementById('fade').style.display='none'">Close</a>
 
 <br \>
-<table border="1" class="tipsTable"> 
+<table border="1" class="tipsTable">
 <tr valign="top">
 <td class="tipsTable bold">Adjacency</td>
 <td class="tipsTable">Multiple words are searched together as one phrase.<br />
@@ -140,7 +172,7 @@ Keyword search results are usually grouped by relevance to bring the most likely
 
 <!--{advancedsearchformend}-->
 </div> <!-- form3Part -->
-
+</div> <!--endRow -->
 </div><!-- pageContentInner -->
 <!--{botlogo}-->
 </body>

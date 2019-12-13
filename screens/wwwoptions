@@ -48,10 +48,10 @@ FORM_FOCUS=true
 ICON_CANCEL=<div   id="ICON_CANCEL">Cancel</div>
 ICON_OK=<div   id="ICON_OK">OK</div>
 ICON_PREVPAGE=<div   id="ICON_PREVPAGE">Previous Screen</div>
-ICON_SUBMIT=<div   id="ICON_SUBMIT">Submit</div>
+ICON_SUBMIT=<div class="btn btn-primary"  id="ICON_SUBMIT">Search</div>
 ICON_UPDATELIST=<div   id="ICON_UPDATELIST">Update List</div>
 ICON_CLEAR_ALL=<div   id="ICON_CLEAR_ALL">Clear All</div>
-ICON_CLEAR_FORM=<div   id="ICON_CLEAR_FORM">Clear Form</div>
+ICON_CLEAR_FORM=<div class="btn btn-primary"   id="ICON_CLEAR_FORM">Clear Form</div>
 ICON_DELETE_SELECTED=<div   id="ICON_DELETE_SELECTED">Delete Selected</div>
 ICON_SELECT_ALL=<div   id="ICON_SELECT_ALL">Save All</div>
 #RESOURCETABLE=valign="top"|cellpadding="0" cellspacing="0" border="0"||Resources
