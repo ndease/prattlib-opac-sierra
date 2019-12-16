@@ -7,7 +7,6 @@
 <!-- start catedit token -->
 <!--{catedit}-->
 <!-- end catedit token -->
-
 <div id="bibDisplayBody">
 
 <div id="bibDisplayContent">
@@ -24,9 +23,57 @@
 
 <div class="row">
   <div class="col-lg-2">
+
+<!-- begin table for citation. added by hjp 11-13-08 -->
+<table>
+<tr>
+<td class="bibInfoData bookLinks">
+<!--examples can be found at http://libx.lib.vt.edu/services/googlebooks/-->
+<!--book jacket-->
+<span id="bookjacket" title="OCLC:*" class="gbs-thumbnail-large gbs-link-to-info">
+</span>
+<p></p>
+<!--preview button-->
+<div class="bibdisplayGBS hide">
+<span style="display:none"; title="OCLC:*" class="gbs-link-to-info gbs-if-partial-or-full gbs-remove-on-failure">
+<span id="googlebookpreview" style="display:none">
+</span>
+<img src="http://www.google.com/intl/en/googlebooks/images/gbs_preview_button1.gif">
+</span>
+</div>
+</td>
+ </tr>
+
+<tr>
+<td class="bibInfoData hide">
+    <span id="cnylink"></span>
+</td>
+</tr>
+<tr>
+<td class="bibInfoData hide">
+<span id="citeoclc"></span>
+ </td>
+ </tr>
+<tr>
+<td class="bibInfoData hide">
+<span id="author"></span>
+ </td>
+ </tr>
+<tr>
+<td class="bibInfoData hide">
+<span id="findinworldcat"></span>
+ </td>
+ </tr>
+<tr>
+<td>
+</table>
 <div class="bibDisplayJacket">
+  <span id="bookjacket" title="OCLC:*" class="gbs-thumbnail-large gbs-link-to-info">
+  </span>
+  <p></p>
+      <!--{bibimage}-->
 <!-- start bibimage token -->
-<!--{bibimage}-->
+
 <!-- end bibimage token -->
 <div class="bibMedia">
 <!-- start media token -->
@@ -159,7 +206,6 @@
 
 </div> <!-- bibDisplayContentMore -->
 
-
 </div> <!-- bibDisplayContentMain -->
 
 <div class="bibClear"></div>
@@ -169,6 +215,65 @@
 
 </div><!-- bibDisplayContent -->
 <div class="clear"></div>
+<!-- begin "Cite This" script from IUG list.  Nathan Landis version, modified by Andrew Welch, added by hjp 1-9-09 -->
+<script type="text/javascript">
+
+		try{
+		var tr = document.getElementsByTagName('TR');
+		var otherlib_oclc = "", otherlib_isbn = "", bib_author="" ;
+		for(i = 0; i < tr.length; i++) {
+			var x=tr[i].getElementsByTagName('TD');
+			if (x.length == 2 && x[0].innerHTML == "OCLC #") {
+				otherlib_oclc = x[1].innerHTML.replace(/(<([^>]+)>)/ig,""); //get oclc;
+				otherlib_oclc = otherlib_oclc.replace(/ /g,""); //take out spaces if any;
+				otherlib_oclc = otherlib_oclc.replace(/[\n\t]/ig,""); //take out newline;
+			}
+			if (x.length == 2 && x[0].innerHTML == "ISBN") {
+
+				otherlib_isbn = x[1].innerHTML.replace(/(<([^>]+)>)/ig,""); //get isbn field;
+				otherlib_isbn = otherlib_isbn.replace(/^([0-9xX]+[^0-9xX]).*$/igm,"$1"); //strip out non-isbn data;
+				otherlib_isbn = otherlib_isbn.replace(/ /g,""); //take out spaces if any;
+				otherlib_isbn = otherlib_isbn.replace(/[\n\t]/ig,""); //take out newline;
+			}
+			if (x.length == 2 && x[0].innerHTML == "Author") {		// if I have 2 cells one with the author
+			bib_author = x[1].innerHTML.replace(/(<([^>]+)>)/ig,"");		// get the author and strip all tags
+			bib_author = bib_author.replace(/[\n\t]/ig,"");
+			}
+		}
+
+		//add author info
+		if(bib_author.length > 0){
+			document.getElementById("author").innerHTML = "<a href='http://worldcat.org/identities/find?fullName=" + bib_author+"'> More about the author</a>";
+		}
+
+		if(otherlib_isbn.length > 0){
+			document.getElementById("findinworldcat").innerHTML = "<a href='http://www.worldcat.org/search?q=bn:" + otherlib_isbn + "'>Find it in Worldcat</a>";
+                        document.getElementById("cnylink").innerHTML = "<a href='http://connectny.info/search~S0/?searchtype=i&searcharg=" + otherlib_isbn + "'>Find it in ConnectNY</a>";
+		}
+
+		if (otherlib_oclc.length > 0) {
+			document.getElementById("citeoclc").innerHTML = "<a href='http://worldcat.org/wcpa/oclc/" + otherlib_oclc + "?page=citation' target='_blank'>Cite this item (from WorldCat)</a>";
+			document.getElementById("bookjacket").innerHTML = otherlib_oclc; //insert google book jacket
+			document.getElementById("googlebookpreview").innerHTML = otherlib_oclc; //insert google book preview button
+			editionlink = "<a href='http://summit.worldcat.org/oclc/" + otherlib_oclc+ "/editions/' target='_blank'>Search Worldcat for other editions of this title</a>";
+			//document.getElementById("otherEditionLinks").innerHTML  = "<a href='http://summit.worldcat.org/oclc/" + otherlib_oclc+ "/editions/' target='_blank'>Search Worldcat for other editions of this title</a>";
+
+			}
+
+		else if (otherlib_isbn.length > 0) {
+			//document.getElementById("citeoclc").innerHTML = "<a href='http://worldcat.org/wcpa/search?q=isbn%3A" + otherlib_isbn + "&qt=advanced'>Check for citation</a> (click on \"Cite\" in WorldCat)";
+			document.getElementById("citeoclc").innerHTML = "";
+		}
+
+		else {
+		  	document.getElementById("citeoclc").innerHTML = "No citation available. ";}
+
+	}catch(e) {}
+</script>
+
+
+
+<!--end Cite this-->
 </div><!-- bibDisplayBody -->
 <!-- start botlogo token -->
 <!--{botlogo}-->
