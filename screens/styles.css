@@ -254,7 +254,7 @@ background-color:rgb(255,  185,  0);
 
 .bibMedia  { margin-left:auto; margin-right:auto; }
 .bibMedia   img { margin-top:10px;  }
-.bibMedia { color:#878787; font-size:.7em; line-height:.95em; margin-top:6em; overflow:hidden; width:60px; text-align:center; }
+.bibMedia { color:#878787; font-size:.7em; line-height:.95em; overflow:hidden; width:60px; text-align:center; }
 
 @media (max-width:600px){
   .bibMedia{
@@ -500,8 +500,8 @@ td.browseEntryMedia { color:#878787; font-size:.7em; line-height:.95em; margin-t
 .browsePager td { position:absolute; left:-999px; width:auto; margin:0; }
 .browsePager td.browsePager {  position:static; }
 .browsePager strong { border:0; padding:5px; margin:2px 1px; color:#267385; background:#FFFFFF; }
-.browsePager a { color:#202020; text-decoration:none; padding:10px; }
-.browsePager a:hover { background:black; color:white !important; }
+.browsePager a { padding:10px; }
+.browsePager a:hover { }
 
 div.browseResourceTable { background:#FFFFFF; border: solid 1px #E0E0E0; margin:30px 10px 0 12px; padding:0; }
 .browseResourceTable { padding-top:5px; }
@@ -850,7 +850,6 @@ div .confirmValue { padding-top:3px; }
 .navigationRowRecord { clear: both;
     text-align: center;
     font-size: 80%;
-    margin-top: 50px;
     background-color: #E4E5E6;
     padding: 10px;
     border-radius: 8px; }
@@ -1581,4 +1580,27 @@ text-decoration: none !important;
   display:block;
   margin-left:auto;
   margin-right:auto;
+}
+@media (max-width:600px) {
+.formEntryArea > input {
+    width: 100% !important;
+}
+
+.formEntryArea > select {
+    width: 100% !important;
+}
+}
+@media (max-width:600px) {
+.browseEntry td {
+    border-top: none;
+    display: inline;
+}
+
+.browseHeader td {
+    display: inline;
+    width: auto;
+    background: none;
+    border: none;
+    font-weight: bold;
+}
 }
