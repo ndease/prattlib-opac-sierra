@@ -90,7 +90,7 @@ strong .button { display:block; font-weight:normal; margin-top:15px; }
 
 .pageContent > a > div { margin-left:20px; }
 
-.pageContent p { margin-left:20px; }
+.pageContent p { }
 
 .pageContentInner p { margin-left:0px; }
 
