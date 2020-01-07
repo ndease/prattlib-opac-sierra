@@ -796,7 +796,7 @@ div .confirmValue { padding-top:3px; }
         overflow: auto;
     }
 
-.loggedInMessage { color:#999999; font-size:.8em; font-style:normal; float:right; margin:1px 5px 0 0; }
+.loggedInMessage { color:#999999; font-size:.8em; font-style:normal; float:right; margin:1px 5px 0 0; display:none; }
 
 .loggedInMoreInfo { display:none; position:absolute; top:-5000px; right:-5000px; }
 
@@ -807,7 +807,7 @@ div .confirmValue { padding-top:3px; }
 
 /**M**/
 
-.mainMenuAdvSearch { float:right; font-size:80%; }
+.mainMenuAdvSearch { float:right; font-size:1em; }
 .mainMenuContent { margin-top:45px; text-align:left; }
 .mainMenuContent { width:600px; margin-left:auto; margin-right:auto; }
 
@@ -1171,15 +1171,15 @@ div#searchNavMenu { clear:both; float:right; background:#3B77B6; width:100%; }
 table.tipsTable { width:100%; text-align:left; }
 td.tipsTable { text-align:left; }
 
-.topLinks a { float:right; font-size: 90% }
-.topLinks { float: right; height: auto; margin:0; padding:0; width: 50%; }
+.topLinks a { float:right; }
+.topLinks { float: right; height: auto; margin:0; padding:0; width: 100%; }
 
 #topLinksList a:link { color: #267385; font-weight:bold; padding:6px 15px 3px 15px; text-decoration:none; width:auto; }
 #topLinksList a:visited { color: #267385; font-weight:bold; padding:6px 15px 3px 15px; text-decoration:none; width:auto; }
 #topLinksList a:active { background:#F5F5F5; color:#0091FF; text-decoration:underline; }
 #topLinksList a:hover { background:#F5F5F5; color:#0091FF; text-decoration:underline; }
 #topLinksList li { list-style:none; padding:0; display:inline; }
-#topLinksList  { float:right; margin:0px; padding:0px; font-size:.9em; display:inline; }
+#topLinksList  { float:right; margin:0px; padding:0px; font-size:1.1em; display:block; font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important; }
 
 .topLogo { }
 
@@ -1335,7 +1335,7 @@ tr.highlight { background:#9CCAD5; }
 /* END LIGHTBOX */
 
 
-.patActionsLinks  { background:#FFFFFF; display:inline-block; margin:5px; padding:2px; font-size:75%; border:0px solid #ECECEC; }
+.patActionsLinks  { font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important; background:#FFFFFF; display:inline-block; margin:5px; padding:2px; font-size:1.1em; border:0px solid #ECECEC; }
 .patActionsLinks a:link { color:#267385; font-weight:bold; text-decoration:none; width:auto; }
 .patActionsLinks a:visited { color:#267385; font-weight:bold; text-decoration:none; width:auto; }
 .patActionsLinks a:active { text-decoration:underline; }

@@ -6,7 +6,6 @@
 <title>Sierra Web Catalog</title>
 <meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
 <link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
-<!--<link rel="stylesheet" type="text/css" href="/screens/stylesmain.css" > Un-comment to offer a larger logo on mainmenu.-->
 <script type="text/javascript">/* <![CDATA[ */
 function iiiSearchValidate() {
 	try{
@@ -36,8 +35,8 @@ obj.submit();
 
 <div class="pageContentInner mainSearch">
 
-<div id="accessibleForm" class="form1Part">
-<div class="browseSearchtool">
+<div id="accessibleForm">
+<div class="browseSearchtool" style="margin-top=3rem; margin-bottom=3rem;">
 <form action="/search/" method="get" name="search" id="search" onSubmit="return iiiSearchValidate();">
 
 
@@ -46,9 +45,9 @@ obj.submit();
 <!-- Optional legend:
 <fieldset>
 <legend>Type the search term you want to find.</legend>-->
-<div class="formEntryArea">
-<label for="searchtype" class="accessibleAddInfo">Search type</label>
-<select name="searchtype" id="searchtype" onchange="document.forms[0].searcharg.focus();">
+<div class="row">
+<div class="col-lg-2">
+<select class="form-control" aria-label="search type" name="searchtype" id="searchtype" onchange="document.forms[0].searcharg.focus();">
 <option value="X" selected="selected">Keyword</option>
 <option value="t"> Title</option>
 <option value="a"> Author</option>
@@ -61,27 +60,22 @@ obj.submit();
 <option value="i"> ISBN/ISSN</option>
 <option value="o"> Control no.</option>
 </select>
-<!--{nosort}-->
-<label for="searcharg" class="accessibleAddInfo">Search term</label>
-<input maxlength="75" name="searcharg" size="20" >
-<label for="scope" class="accessibleAddInfo">Location</label>
-<!--{scope}-->
-<span class="nowrap formButtonArea">
-
- <!--{submit}-->
-
-<input type="hidden" id="iiiFormHandle_1"/>
-<div class="button80Bold">
-<a href="#" onclick="iiiDoSubmit_1();"><div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';">Submit</div></a>
 </div>
-
-<input type="submit" class="submitHidden">
-
-</span>
+<!--{nosort}-->
+<div class="col">
+<input class="form-control" aria-label="Search Books and Multimedia" maxlength="75" name="searcharg" size="20" >
+<div class="mainMenuAdvSearch"><a href="search/X">Advanced Search</a></div>
+</div>
+<!--submit button-->
+<div class="col-lg-2">
+			 <button type="submit" aria-label="Library Search" value="search" class="btn btn-primary">Search&nbsp;&nbsp;<i class="fa fa-search"></i>
+			 </button>
+		 </div>
+</div>
 </div><!-- formEntryArea -->
 <!--</fieldset> optional-->
 </form>
-<div class="mainMenuAdvSearch"><a href="/search/X">Advanced Search</a></div>
+
 </div><!-- browseSearchtool -->
 </div><!-- form1Part -->
 <div class="row">
@@ -90,11 +84,11 @@ obj.submit();
     <div class="card-body">
       <i class="main-icons fas fa-user-circle fa-lg" aria-label="My Account"></i>
       <h2 class="card-title">
-        Library Account<hr>
+        <a class="header-link" href="http://cat.pratt.edu:2082/patroninfo">Library Account</a><hr>
       </h2>
       <p class="card-text">Borrow and renew books, videos, and more.</p>
+			<a class="btn btn-primary" href="/patroninfo~S0" target="_blank">Log in</a>
     <a class="btn btn-primary" href="https://library.pratt.edu//policies">Borrowing Policies&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
-    <a class="btn btn-primary" href="/patroninfo~S0" target="_blank">Renew Books</a>
 </div>
   </div>
 </div>
@@ -103,7 +97,7 @@ obj.submit();
         <div class="card-body">
           <i class="fas fa-globe main-icons fa-lg"></i>
           <h2 class="card-title">
-            ConnectNY<hr>
+            <a class="header-link" href="https://libguides.pratt.edu/interlibraryloan/cny-faq">ConnectNY</a><hr>
           </h2>
           <p class="card-text">Request books outside of the Pratt Collections with quick delivery and a loan period of 42 days.</p>
         <a class="btn btn-primary" href="https://libguides.pratt.edu/interlibraryloan/cny-faq">FAQ</a>
