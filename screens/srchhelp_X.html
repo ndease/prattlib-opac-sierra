@@ -49,6 +49,12 @@ label{
 .inner-hr{
   background-color:lightgray !important;
 }
+
+@media (max-width:600px){
+select{
+  width:100%;
+}
+}
 </style>
 </head>
 <!--{advancedsearchbody}-->
@@ -174,6 +180,13 @@ Keyword search results are usually grouped by relevance to bring the most likely
 </div> <!-- form3Part -->
 </div> <!--endRow -->
 </div><!-- pageContentInner -->
+<script>
+$(window).on('load', function() {
+  if (location.search.indexOf('SUBKEY') != -1 || location.search.indexOf('SEARCH') != -1 || location.search.indexOf('searcharg=') != -1 ) modifySearch(document.location.search); init_progsearch(); if (document.search) document.search.searchText1.focus();
+})
+</script>
+
 <!--{botlogo}-->
 </body>
+
 </html>

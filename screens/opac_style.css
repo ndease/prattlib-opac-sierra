@@ -38,6 +38,9 @@ For 10pt, apply .7353em
 /* Section 1 */
 /*Global tag styles*/
 
+h2{ font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
+    font-weight: normal !important;}
+
 body { font-family: "LyonRegular", Helvetica, Arial, sans-serif; !important; font-size:100%; font-style:normal; font-weight: normal; text-align:center; width:100%; margin-top:0px; background:#FFFFFF }
 
 td { font-family: "LyonRegular", Helvetica, Arial, sans-serif !important;}
@@ -69,7 +72,7 @@ html { height:100%; width:100%;}
 form a { display:table-cell; display:inline-block; }
 
 /* This rule causes search form elements to resize along with the rest of the text on the page if the user resizes text. */
-input, select, textarea { color:#616161;  }
+input, select, textarea { color:#616161; font-family: }
 
 /* This rule uses CSS2 to give a nicer effect in compliant browsers, while avoiding an annoying display effect in Internet Explorer 6 */
 input[type="checkbox"] { background-color: #FFF8EF; }
@@ -535,8 +538,21 @@ table.browseResourceTable { border:0; }
     border: 1px solid lightgray;}
 .browseSearchtool form { margin:0; }
 
-.browseSearchtool input { margin:1px 1px 3px 1px; }
-.browseSearchtool select { margin:1px 1px 3px 1px; }
+.browseSearchtool input {
+  margin:1px 1px 3px 1px;
+  height: calc(1.5em + .75rem + 2px);
+  font-size: 1rem;
+  border-radius: .25rem;
+  background-color:white;
+  border: 1px solid #ced4da;
+      }
+.browseSearchtool select { margin:1px 1px 3px 1px;
+
+      height: calc(1.5em + .75rem + 2px);
+      font-size: 1rem;
+      border-radius: .25rem;
+          border: 1px solid #ced4da;
+       }
 
 .browseSearchtoolMessage { margin-bottom:3px; }
 
@@ -675,7 +691,7 @@ div .confirmValue { padding-top:3px; }
 
 .formRequired { color:#990000;font-weight:bold;font-size:1.3em;position:relative;top:5px; }
 
-.formRight { float:right; padding:10px; width:300px; }
+.formRight {  }
 .formRight td { }
 .formRight th { padding-right:10px; text-align:right; vertical-align:top; }
 
@@ -683,12 +699,27 @@ div .confirmValue { padding-top:3px; }
 .formsTogether .form1Part { width:96%; }
 
 .form1Part { padding:10px; }
-.form1Part { background:#FFFFFF; border:1px solid #BDBDBD; margin-bottom:15px; box-shadow: 5px 5px 5px #888888;}
+.form1Part {
+  background-color: #E4E5E6;
+    border-radius: 8px;
+    font-size: .9em;
+    padding: 40px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border: 1px solid lightgray;}
+
 .form1Part fieldset { padding:0.35em 2em 0.75em 0; }
 .form1Part formLabel { font-size:.8824em; }
 
 
-.form2Part { background:#FFFFFF; border:1px solid #BDBDBD; margin-bottom:15px; display:inline-block; overflow:none; }
+.form2Part {   background-color: #E4E5E6;
+    border-radius: 8px;
+    font-size: .9em;
+    padding: 40px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border: 1px solid lightgray;
+   }
 .form2Part fieldset { padding:0.35em 2em 0.75em 0; }
 .form2Part formLabel { font-size:.8824em; }
 
@@ -807,7 +838,8 @@ div .confirmValue { padding-top:3px; }
 
 /**M**/
 
-.mainMenuAdvSearch { float:right; font-size:1em; }
+.mainMenuAdvSearch { float:right; font-size:1em; font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+ }
 .mainMenuContent { margin-top:45px; text-align:left; }
 .mainMenuContent { width:600px; margin-left:auto; margin-right:auto; }
 
@@ -852,6 +884,7 @@ div .confirmValue { padding-top:3px; }
     font-size: 80%;
     background-color: #E4E5E6;
     padding: 10px;
+    margin-bottom:1rem;
     border-radius: 8px; }
 
 .navigationRowNoForm { margin-top:5px; margin-bottom:0; }
@@ -1150,7 +1183,28 @@ div#searchNavMenu { clear:both; float:right; background:#3B77B6; width:100%; }
 .searchtool select { line-height:1.2em; }
 .searchtool input { line-height:1.2em; }
 
+.bibSearch input {
+  height: calc(1.5em + .75rem + 2px);
+  font-size: 1rem;
+  border-radius: .25rem;
+  background-color:white;
+  border: 1px solid #ced4da;
+}
+
+.bibSearch select{
+  height: calc(1.5em + .75rem + 2px);
+  font-size: 1rem;
+  border-radius: .25rem;
+  background-color:white;
+  border: 1px solid #ced4da;
+}
 #sectionContent { clear:both; }
+
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+    height: 15px;
+}
 
 /* Program Registration Ecommerce */
 .sectionTitleDiv { font-size:100%; }
@@ -1172,12 +1226,12 @@ table.tipsTable { width:100%; text-align:left; }
 td.tipsTable { text-align:left; }
 
 .topLinks a { float:right; }
-.topLinks { float: right; height: auto; margin:0; padding:0; width: 100%; }
+.topLinks { float: right; height: auto; margin:1em; padding:0; width: 100%; }
 
-#topLinksList a:link { color: #267385; font-weight:bold; padding:6px 15px 3px 15px; text-decoration:none; width:auto; }
-#topLinksList a:visited { color: #267385; font-weight:bold; padding:6px 15px 3px 15px; text-decoration:none; width:auto; }
-#topLinksList a:active { background:#F5F5F5; color:#0091FF; text-decoration:underline; }
-#topLinksList a:hover { background:#F5F5F5; color:#0091FF; text-decoration:underline; }
+#topLinksList a:link { color: #267385; padding:6px 15px 3px 15px; text-decoration:none; width:auto; }
+#topLinksList a:visited { color: #267385; padding:6px 15px 3px 15px; text-decoration:none; width:auto; }
+#topLinksList a:active {  color:#0091FF; text-decoration:underline; }
+#topLinksList a:hover {  color:#0091FF; text-decoration:underline; }
 #topLinksList li { list-style:none; padding:0; display:inline; }
 #topLinksList  { float:right; margin:0px; padding:0px; font-size:1.1em; display:block; font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important; }
 
@@ -1336,9 +1390,9 @@ tr.highlight { background:#9CCAD5; }
 
 
 .patActionsLinks  { font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important; background:#FFFFFF; display:inline-block; margin:5px; padding:2px; font-size:1.1em; border:0px solid #ECECEC; }
-.patActionsLinks a:link { color:#267385; font-weight:bold; text-decoration:none; width:auto; }
-.patActionsLinks a:visited { color:#267385; font-weight:bold; text-decoration:none; width:auto; }
-.patActionsLinks a:active { text-decoration:underline; }
+.patActionsLinks a:link {  text-decoration:none; width:auto; }
+.patActionsLinks a:visited {  text-decoration:none; width:auto; }
+.patActionsLinks a:active {  }
 .patActionsLinks a:hover { text-decoration:underline; }
 
 .patHR { border: 1px; background-color: #F5F5F5; height: 1px; }
@@ -1539,6 +1593,34 @@ text-decoration: none !important;
   margin-bottom: 50px;
 }
 
+/*account page fixes*/
+
+#ICON_PATFEED{
+  display:none;
+}
+
+#nameprompt::before{
+  content: "Full Name"
+}
+
+#nameprompt{
+  font-weight:bold;
+}
+
+#codeprompt{
+  font-weight:bold;
+}
+
+.pageHeader{
+  text-align:center !important;
+  text-transform: none;
+  font-size: 2em;
+}
+
+/*libChat fixes*/
+.lcs_slide_out > header > a{
+  font-family: apercuRegular;
+}
 /*StackMap Fixes*/
 .SMprinter-friendly.no-fa::after {
     display: none !important;
@@ -1560,6 +1642,13 @@ text-decoration: none !important;
   display:none !important;
 }
 
+.SMpopup h2{
+  margin-left:2rem;
+  margin-right:2rem;
+  font-size:1em !important;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+  text-transform:none !important;
+}
 /*standardize book jacket thumbnails */
 .gbs-thumbnail > img {
     width: 100% !important;
@@ -1603,4 +1692,21 @@ text-decoration: none !important;
     border: none;
     font-weight: bold;
 }
+}
+
+.account-list ul li {
+font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
+display: inline-block; margin-left: 1.5em; float: right;
+font-size:1.1em;
+}
+
+.account-list a:hover{
+  text-decoration:none;
+}
+input {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+}
+
+select{
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
 }

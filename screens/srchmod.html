@@ -15,11 +15,43 @@ startTimeout(600000, "/");
 </noscript>
 <meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
 <link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
-<script type="text/javascript" src="/screens/iiilangswitch.js"></script> 
+<script type="text/javascript" src="/screens/iiilangswitch.js"></script>
+
+<style>
+td{
+  width: 100%;
+    display: block;
+    padding: .5rem;
+}
+
+legend{
+  font-size:1em !important;
+  font-weight:bold;
+  font-family: "ApercuRegular", Helvetica, Arial, sans-serif !important;
+}
+label{
+  font-size:1em;
+  font-weight:bold;
+  font-family: "ApercuRegular", Helvetica, Arial, sans-serif !important;
+  float:none;
+  width:100%;
+}
+
+}
+hr.inner-hr {
+  background-color:lightgray !important;
+}
+
+@media (max-width:600px){
+select{
+  width:100%;
+}
+}
+</style>
 </head>
 <body>
 <!--{toplogo}-->
-<div class="pageContentInner">
+<div class="pageContentInner container">
 <h1 class="pageHeader">Limit/Sort Search</h1>
 
 <p>
@@ -43,36 +75,46 @@ You searched for the
 
 <fieldset>
 <legend>Please select criteria to limit by:</legend>
-
+<div class="row">
+<div class="col-lg-4 col-md-6">
 <div class="formEntryArea">
 <span class="formLabel">
 <label for="W">Location:</label>
 </span>
 <!--{WHERE_select}-->
 </div>
+</div>
 
+<div class="col-lg-4 col-md-6">
 <div class="formEntryArea">
 <span class="formLabel">
 <label for="M">Material type:</label>
 </span>
 <!--{MATERIAL_select}-->
 </div>
+</div>
 
+<div class="col-lg-4 col-md-6">
 <div class="formEntryArea">
 <span class="formLabel">
 <label for="L">Language:</label>
 </span>
 <!--{LANGUAGE_select}-->
 </div>
-
+</div>
+</div>
+<hr class="inner-hr" style="background-color:lightgray !important;">
+<div class="row">
+  <div class="col-lg-4 col-md-6">
 <div class="formEntryArea">
 <span class="formLabel">
 <label for="L">Publisher</label>
 </span>
 <!--{PUBLISHER_select}-->
 </div>
+</div>
 
-
+<div class="col-lg-4 col-md-6">
 <div class="formEntryArea">
 <fieldset class="formFieldsetInner">
 <legend>Year of publication:</legend>
@@ -84,15 +126,19 @@ You searched for the
 </div>
 </fieldset>
 </div>
+</div>
+<div class="col-lg-4 col-md-6">
 <br clear="left" />
 <div class="formEntryArea">
 <label for="NAME" class="accessibleAddInfo">Limit type:</label>
-<span class="formLabel"><label for="VALUE">Enter limits:</label></span>
 <!--{TITLE_label}-->
+<span class="formLabel"><label for="VALUE">Enter limits:</label></span>
 <!--{TITLE_select}-->
 </div>
-
+</div>
+</div>
 <br clear="left" />
+<hr class="inner-hr" style="background-color:lightgray !important;">
 <div class="formEntryArea">
 <span class="formLabel">
 <label for="sortdropdown">Sort By:</label>
