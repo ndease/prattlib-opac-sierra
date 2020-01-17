@@ -254,7 +254,7 @@ ICON_BUT_CLEAR_MARKED=<div   id="ICON_BUT_CLEAR_MARKED">Empty Bag</div>
 ICON_BUT_EXPORT_MULTI=<div   id="ICON_BUT_EXPORT_MULTI">Export Saved</div>
 ICON_BUT_EXPORT_VIEW_SAVES=<div   id="ICON_BUT_EXPORT_VIEW_SAVES">View Bag</div>
 ICON_BUT_VIEW_SAVES=<div   id="ICON_BUT_VIEW_SAVES">View Bag</div>
-EMAILOP=From the library catalog|staff@library.org|
+EMAILOP=From the library catalog|library.catalog@pratt.edu|
 EXPORT_SELECT_TABLE=Sendto:browser,email,local|Format:full,brief,marc,procite,endnote
 XRECTYPE=boi
 
@@ -397,7 +397,7 @@ ERESERVE=[0123456789]
 #IMAGE_SAVE=yes
 
 # Reserves
-RSRV_FORMAT=true
+RSRV_FORMAT=false
 #RSRV_HEADER=Materials for this Course
 #RSRV_HEADER=Featured Titles This Month
 TABLEPARAM_RSRV_BIBS=width="100%" border="0" cellpadding="0" cellspacing="0" name="tableparam_rsrv_bibs"
