@@ -544,6 +544,10 @@ table.browseResourceTable { border:0; }
     border: 1px solid lightgray;}
 .browseSearchtool form { margin:0; }
 
+.browseSearchtool a {
+  color:#0A64B2 !important;
+}
+
 @media (max-width:600px){
   .browseSearchtool input{width:100%;}
   .browseSearchtool select{width:100%; margin-bottom: 1em !important;}
