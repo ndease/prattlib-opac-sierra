@@ -248,7 +248,7 @@ ICON_BACK_TO_MYLISTS=<div   id="ICON_BACK_TO_MYLISTS">Back to My Lists</div>
 ICON_MYLISTS_RECORD=<div   id="ICON_MYLISTS_RECORD">Add to My Lists</div>
 
 # Saving and Exporting
-#BRIEF_EXPORT=c|a|t|p
+BRIEF_EXPORT=c|a|t|p
 ICON_BUT_BIBEXPORT=<div   id="ICON_BUT_BIBEXPORT">Add to Bag</div>
 ICON_BUT_CLEAR_MARKED=<div   id="ICON_BUT_CLEAR_MARKED">Empty Bag</div>
 ICON_BUT_EXPORT_MULTI=<div   id="ICON_BUT_EXPORT_MULTI">Export Saved</div>

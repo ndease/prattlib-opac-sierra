@@ -38,7 +38,6 @@
 <span style="display:none"; title="OCLC:*" class="gbs-link-to-info gbs-if-partial-or-full gbs-remove-on-failure">
 <span id="googlebookpreview" style="display:none">
 </span>
-<img src="http://www.google.com/intl/en/googlebooks/images/gbs_preview_button1.gif">
 </span>
 </div>
 </td>
@@ -253,7 +252,6 @@
 		if (otherlib_oclc.length > 0) {
 			document.getElementById("citeoclc").innerHTML = "<a href='http://worldcat.org/wcpa/oclc/" + otherlib_oclc + "?page=citation' target='_blank'>Cite this item (from WorldCat)</a>";
 			document.getElementById("bookjacket").innerHTML = otherlib_oclc; //insert google book jacket
-			document.getElementById("googlebookpreview").innerHTML = otherlib_oclc; //insert google book preview button
 			editionlink = "<a href='http://summit.worldcat.org/oclc/" + otherlib_oclc+ "/editions/' target='_blank'>Search Worldcat for other editions of this title</a>";
 			//document.getElementById("otherEditionLinks").innerHTML  = "<a href='http://summit.worldcat.org/oclc/" + otherlib_oclc+ "/editions/' target='_blank'>Search Worldcat for other editions of this title</a>";
 
