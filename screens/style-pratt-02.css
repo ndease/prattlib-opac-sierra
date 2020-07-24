@@ -263,7 +263,7 @@ width:100%
 }
 @media (min-width:601px){
 .bibInfoLabel {
-width: 20%; 
+width: 20%;
 }
 }
 
@@ -567,7 +567,7 @@ table.browseResourceTable { border:0; }
   color:#0A64B2 !important;
 }
 
-@media (max-width:600px){
+@media (max-width:1000px){
   .browseSearchtool input{width:100%;}
   .browseSearchtool select{width:100%; margin-bottom: 1em !important;}
 }
@@ -737,9 +737,13 @@ div .confirmValue { padding-top:3px; }
     border-radius: 8px;
     font-size: .9em;
     padding: 40px;
+    font-size:1.1em !important;
+    font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
+    font-weight: normal !important;
     margin-bottom: 1rem;
     margin-top: 1rem;
-    border: 1px solid lightgray;}
+    border: 1px solid lightgray;
+  }
 
 .form1Part fieldset { padding:0.35em 2em 0.75em 0; }
 .form1Part formLabel { font-size:.8824em; }
@@ -1653,6 +1657,7 @@ text-decoration: none !important;
   text-align:center !important;
   text-transform: none;
   font-size: 2em;
+  padding:1em;
 }
 
 /*libChat fixes*/
