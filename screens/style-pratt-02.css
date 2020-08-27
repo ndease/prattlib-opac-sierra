@@ -421,6 +421,22 @@ div.bookingsVerify { padding:0; margin-top:18px; }
   display:block;
  }
 
+ .briefcitRequest #ICON_REQUEST{
+   text-align:left;
+   padding: .5rem 0 .5rem 0;
+   font-family: "ApercuRegular", Helvetica, Arial, sans-serif !important;
+   display:block;
+   font-size:1.15em;
+ }
+
+#ICON_BUT_REQUEST{
+    background-color: #FFB900;
+    border-radius:20px;
+    color:black;
+    padding: 1em;
+    font-size: .75em;
+}
+
  .briefcitActions > a{
    color:black !important;
  }
@@ -460,7 +476,7 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitItemsMain { float:left; width:85%; }
 
-.briefcitJacket  { float:left; margin: 30px; width:80px; display:inline; }
+.briefcitJacket  { float:left; margin: 1.5em; width:80px; display:inline; }
 
 .briefcitLeft { display:inline; float:left; margin-bottom:30px; padding:0; text-align:left; border: solid 1px #FF; }
 
@@ -1047,6 +1063,45 @@ tr.patFuncTitle { background:#FFFFFF; border:1px solid #D1D8DD; font-weight:bold
 .patFuncTitle a:visited { color:#007bff; font-weight:bold; text-decoration:none; width:auto; }
 .patFuncTitle a:active { text-decoration:underline; }
 .patFuncTitle a:hover { text-decoration:underline; }
+
+.patfunct > span > a {
+    display: inline-block;
+    margin: 2px;
+    border: solid 1px black;
+    background-color: white !important;
+    color: black !important;
+    font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 400;
+    padding: .375rem .75rem;
+    line-height:1.5;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.patfunct > span > a:hover{
+  background-color: #0090D0 !important;
+  color: white !important;
+}
+
+.patfunct > a {
+    display: inline-block;
+    margin: 2px;
+    border: solid 1px black;
+    background-color: white !important;
+    color: black !important;
+    font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 400;
+    line-height:1.5;
+    padding: .375rem .75rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.patfunct > a:hover {
+  background-color: #0090D0 !important;
+  color: white !important;
+}
 
 .patHelp { border:0; clear:none; margin:0; padding:0; text-align:left; float:none; width:auto; }
 
@@ -1751,6 +1806,22 @@ input {
 
 select{
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+padding: .375rem .75rem;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;
+color: #495057;
+background-color: #fff;
+background-clip: padding-box;
+border: 1px solid #ced4da;
+border-radius: .25rem;
+transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+label{
+  display:inline-block;
+  margin: .5em;
+  font-family:"ApercuMedium", helvetica, arial;
 }
 
 #newlist {

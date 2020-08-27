@@ -1,4 +1,3 @@
-
 <!--{toplogo}-->
 <!-- start ifbibdisplay token -->
 <!--{ifbibdisplay}-->
@@ -115,6 +114,28 @@
 <!--{recordinfo:e}-->
 <!-- end recordinfo:e token -->
 </div>
+<!--Request a PDF-->
+<style>
+.pratt-btn {
+    background-color: #FFB900;
+    padding: .6rem !important;
+    margin: 1rem;
+    width:200px !important;
+    float:right;
+    padding: 1.25rem;
+    border-radius: 5px;
+    color: black !important;
+    display: block;
+    text-align: center;
+    transition-duration: 0.2s;
+}
+.pratt-btn:hover{
+    background-color: #0090D0 !important;
+    color: white !important;
+    text-decoration: none !important;
+}
+</style>
+<span id="pdf-request"></span>
 <!--{ifhaspatrate}-->
 <div class="bibDisplayRatings">
 <!-- start ratings token -->
@@ -222,7 +243,7 @@
 
 		try{
 		var tr = document.getElementsByTagName('TR');
-		var otherlib_oclc = "", otherlib_isbn = "", bib_author="" ;
+		var otherlib_oclc = "", otherlib_isbn = "",otherlib_issn = "", bib_author="" ;
 		for(i = 0; i < tr.length; i++) {
 			var x=tr[i].getElementsByTagName('TD');
 			if (x.length == 2 && x[0].innerHTML == "OCLC #") {
@@ -241,6 +262,11 @@
 			bib_author = x[1].innerHTML.replace(/(<([^>]+)>)/ig,"");		// get the author and strip all tags
 			bib_author = bib_author.replace(/[\n\t]/ig,"");
 			}
+      if (x.length == 2 && x[0].innerHTML == "ISSN") {
+
+        otherlib_issn = x[1].innerHTML.replace(/(<([^>]+)>)/ig,""); //get issn field;
+        otherlib_issn = otherlib_issn.replace(/[\n\t]/ig,""); //take out newline;
+      }
 		}
 
 		//add author info
@@ -251,14 +277,19 @@
 		if(otherlib_isbn.length > 0){
 			document.getElementById("findinworldcat").innerHTML = "<a href='http://www.worldcat.org/search?q=bn:" + otherlib_isbn + "'>Find it in Worldcat</a>";
                         document.getElementById("cnylink").innerHTML = "<a href='http://connectny.info/search~S0/?searchtype=i&searcharg=" + otherlib_isbn + "'>Find it in ConnectNY</a>";
+                        document.getElementById("pdf-request").innerHTML = "<a class='pratt-btn' target='_blank' href='https://pratt.libwizard.com/f/document-delivery?&isbn=" + otherlib_isbn + "'><i class='far fa-file-pdf'></i>&nbsp;&nbsp;Request a PDF Scan</a>";
 		}
+
+    if(otherlib_issn.length > 0){
+      document.getElementById("pdf-request").innerHTML = "<a class='pratt-btn' target='_blank' href='https://pratt.libwizard.com/f/document-delivery?&issn=" + otherlib_issn + "'><i class='far fa-file-pdf'></i>&nbsp;&nbsp;Request a PDF Scan</a>";
+    }
 
 		if (otherlib_oclc.length > 0) {
 			document.getElementById("citeoclc").innerHTML = "<a href='http://worldcat.org/wcpa/oclc/" + otherlib_oclc + "?page=citation' target='_blank'>Cite this item (from WorldCat)</a>";
 			document.getElementById("bookjacket").innerHTML = otherlib_oclc; //insert google book jacket
 			editionlink = "<a href='http://summit.worldcat.org/oclc/" + otherlib_oclc+ "/editions/' target='_blank'>Search Worldcat for other editions of this title</a>";
 			//document.getElementById("otherEditionLinks").innerHTML  = "<a href='http://summit.worldcat.org/oclc/" + otherlib_oclc+ "/editions/' target='_blank'>Search Worldcat for other editions of this title</a>";
-
+      document.getElementById("pdf-request").innerHTML = "<a class='pratt-btn' target='_blank' href='https://pratt.libwizard.com/f/document-delivery?&oclc=" + otherlib_oclc + "'><i class='far fa-file-pdf'></i>&nbsp;&nbsp;Request a PDF Scan</a>";
 			}
 
 		else if (otherlib_isbn.length > 0) {
@@ -279,7 +310,8 @@
 <!-- start botlogo token -->
 <!--{botlogo}-->
 <!-- end botlogo token -->
-<script>
+
+<!-- <script>
   window.onload=addCNY;
 
   var cnyLink = document.getElementById("cnyLink");
@@ -303,5 +335,28 @@
   $('td:contains("CNY")').append( $(cnyLink));
   $('td:contains("RECEIVED")').append( $(cnyLink));
   $('td:contains("ON ORDER")').append( $(cnyLink));
+  }
+</script> -->
+
+<script>
+  window.onload=changeButtons;
+
+  var pickupRequest = document.getElementById("ICON_BUT_REQUEST").parentElement;
+
+  function changeButtons(){
+    if ($('td:contains("Media Collection")').length > 0) {
+      document.getElementById("pdf-request").style.display = "none";
+    } else if ($('td:contains("Online Resource")').length > 0) {
+      document.getElementById("pdf-request").style.display = "none";
+    }
+    else if ($('td:contains("Thesis Collection")').length > 0) {
+      document.getElementById("pdf-request").style.display = "none";
+    }
+    else
+    {
+      document.getElementById("pdf-request").style.display = "block";
+    }
+
+  $('td:contains("AVAILABLE")').append( $(pickupRequest));
   }
 </script>

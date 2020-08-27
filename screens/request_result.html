@@ -1,29 +1,60 @@
 <!--{toplogo}-->
 <div class="pageContentInner">
-<div class="navigationRow navigationRowNoForm" style="text-align:center">
-<!--{startover}-->
-<!--{ret2browse}-->
-</div>
-<h1 class="pageHeader">Your Request</h1>
 <!--Beginning main page content-->
 <div class="requestResult">
+  <h1 class="pageHeader hide">Your Request</h1>
 <!--{iferror}-->
+<div class="alert alert-warning">
 <p>
 <!--{errormsg}-->
 </p>
+</div>
 <!--{else}-->
+<div class="alert alert-success">
 <p>
 <!--{successmsg}-->
 </p>
 <!--{xif}-->
 <!--{ifpickuploc}-->
-<p>You will be able to pick up this material at
+<p>You will receive an email to schedule your pick up time for this material at
 <!--{pickuploc}-->
  when it is ready.
 </p>
-<!--{xif}-->
 </div>
+
+</div>
+<hr>
+<h2 style="text-align:center; margin:2em;">What happens next...</h2>
+<div class="row">
+                <div class="col-lg-4 col-md-6 card text-center">
+                    <div class="card-body">
+                       <i style="margin-bottom:.5em;" class="fas fa-4x fa-book"></i>
+                        <h3 class="card-title">We'll package it</h3>
+                        <p class="text-muted">Library staff will verify that the item is available and package it with any other items you requested for pickup.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="card-body">
+                        <i style="margin-bottom:.5em;" class="far fa-4x fa-calendar-check"></i>
+                        <h3 class="card-title">You'll pick a time</h3>
+                        <p class="text-muted">When it's ready, you'll get an email to your @pratt.edu address with the subject, "Circulation Notice from Pratt Libraries." Important! This email has a link for you to schedule your pickup appointment time.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="card-body">
+                        <i style="margin-bottom:.5em;" class="fa fa-4x fa-thumbs-up"></i>
+                        <h3 class="card-title">Swing by the library!</h3>
+                        <p class="text-muted"> Once approved by library staff, you will receive another email confirming your pickup time! Please note that you must adhere to <a href="https://www.pratt.edu/coronavirus/health-and-safety/campus-access/" target="_blank">campus access requirements</a> before coming on campus.</p>
+                    </div>
+                </div>
+            </div>
+<!--{xif}-->
+<h2 style="text-align:center; margin:1em;">Questions?</h2>
+<a style="text-align:center; display:block;" class="btn btn-primary btn-lg" href="mailto:libref@pratt.edu">Contact Us</a>
 <!--End of main page content-->
 </div>
+<div class="navigationRow navigationRowNoForm" style="text-align:center">
+  <!--{startover}-->
+  <!--{ret2browse}-->
+</div>
 <!--{botlogo}-->
-

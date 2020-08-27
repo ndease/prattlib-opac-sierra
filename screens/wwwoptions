@@ -263,16 +263,16 @@ EXPORT_SELECT_TABLE=Sendto:browser,email,local|Format:full,brief,marc,procite,en
 XRECTYPE=boi
 
 #Requesting
-BIBREQUEST=false
-ICON_BUT_REQUEST=<div   id="ICON_BUT_REQUEST">Place on Hold</div>
+BIBREQUEST=true
+ICON_BUT_REQUEST=<div   id="ICON_BUT_REQUEST"><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Request for Pickup</div>
 ICON_BUT_REQUEST_ALL=<div   id="ICON_BUT_REQUEST_ALL">Request Available</div>
 ICON_BUT_REQUEST_MULTI=<div   id="ICON_BUT_REQUEST_MULTI">Request Saved</div>
 ICON_BUT_REQUEST_RESET=<div   id="ICON_BUT_REQUEST_RESET">Reset Form</div>
 ICON_BUT_REQUEST_SELECTED=<div   id="ICON_BUT_REQUEST_SELECTED">Request Selected</div>
-ICON_REQUEST=<div   id="ICON_REQUEST">Place Hold</div>
+ICON_REQUEST=<div   id="ICON_REQUEST"><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Request for Contact-free Pickup</div>
 # REQFILLTIME=14|<br>Request available in approximately %d days|<br>Current estimated availability: approximately %d days|<br>This material may be immediately available
-REQUEST=Hold this item|bib|ask|Y
-REQUEST_ARTICLE_IFCHKIN=Y
+REQUEST=Hold this item|bib|ask|N
+REQUEST_ARTICLE_IFCHKIN=N
 # REQUEST_INSTRUCTION=Please enter any special instructions:
 REQUEST_MULTI=Request All Items in Book Cart|bib|ask
 
