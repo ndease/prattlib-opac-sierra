@@ -157,8 +157,8 @@ a:hover  { color: #0E5667; text-decoration: underline; }
 .bibDetail table { vertical-align:top; }
 
 #bibDisplayBody { padding-top:5px; }
-#bibDisplayBody a:link { color: #007bff; font-weight:bold; padding:6px 5px 3px 0px; text-decoration:none; width:auto; }
-#bibDisplayBody a:visited { color: #007bff; font-weight:bold; padding:6px 5px 3px 0px; text-decoration:none; width:auto; }
+#bibDisplayBody a:link {text-decoration:none; width:auto; }
+#bibDisplayBody a:visited { text-decoration:none; width:auto; }
 #bibDisplayBody a:active { text-decoration:underline; }
 #bibDisplayBody a:hover { text-decoration:underline; }
 
