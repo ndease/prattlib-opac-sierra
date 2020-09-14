@@ -1080,7 +1080,7 @@ tr.patFuncTitle { background:#FFFFFF; border:1px solid #D1D8DD; font-weight:bold
 }
 
 .patfunct > span > a:hover{
-  background-color: #0090D0 !important;
+  background-color: #0C77D4 !important;
   color: white !important;
 }
 
@@ -1099,7 +1099,7 @@ tr.patFuncTitle { background:#FFFFFF; border:1px solid #D1D8DD; font-weight:bold
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 .patfunct > a:hover {
-  background-color: #0090D0 !important;
+  background-color: #0C77D4 !important;
   color: white !important;
 }
 
@@ -1587,7 +1587,7 @@ transition: color .15s ease-in-out,background-color .15s ease-in-out,border-colo
 border-width: 1px !important;
 border-color: black !important;
 border-radius: 0px !important;
-background-color: #0090D0 !important;
+background-color: #0C77D4 !important;
 color: white !important;
 font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
 text-decoration: none !important;
@@ -1625,7 +1625,7 @@ transition: color .15s ease-in-out,background-color .15s ease-in-out,border-colo
 border-width: 1px !important;
 border-color: black !important;
 border-radius: 0px !important;
-background-color: #0090D0 !important;
+background-color: #0C77D4 !important;
 color: white !important;
 font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
 text-decoration: none !important;
