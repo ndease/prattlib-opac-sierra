@@ -238,6 +238,8 @@
 </div> <!-- bibDisplayContentMain -->
 
 <div class="bibClear"></div>
+<div id="reportProblem" class="bibDisplayPermLink" style="margin-top:1em;"><a href="https://pratt.libwizard.com/f/reportaproblem" target="_blank"><i class="fas fa-exclamation-triangle"></i>&nbsp;&nbsp;Report a Problem</a>
+</div>
 </div><!--endCol-lg-10-->
 </div><!--endRow-->
 <div class="bibClear"></div>
@@ -284,10 +286,12 @@
 			document.getElementById("findinworldcat").innerHTML = "<a href='http://www.worldcat.org/search?q=bn:" + otherlib_isbn + "'>Find it in Worldcat</a>";
                         document.getElementById("cnylink").innerHTML = "<a href='http://connectny.info/search~S0/?searchtype=i&searcharg=" + otherlib_isbn + "'>Find it in ConnectNY</a>";
                         document.getElementById("pdf-request").innerHTML = "<a class='pratt-btn' target='_blank' href='https://pratt.libwizard.com/f/document-delivery?&isbn=" + otherlib_isbn + "'><i class='far fa-file-pdf'></i>&nbsp;&nbsp;Request a PDF Scan</a>";
+                        document.getElementById("reportProblem").innerHTML = "<a target='_blank' href='https://pratt.libwizard.com/f/reportaproblem?&isbn=" + otherlib_isbn + "'><i class='fas fa-exclamation-triangle'></i>&nbsp;&nbsp;Report a Problem</a>";
 		}
 
     if(otherlib_issn.length > 0){
       document.getElementById("pdf-request").innerHTML = "<a class='pratt-btn' target='_blank' href='https://pratt.libwizard.com/f/document-delivery?&issn=" + otherlib_issn + "'><i class='far fa-file-pdf'></i>&nbsp;&nbsp;Request a PDF Scan</a>";
+      document.getElementById("reportProblem").innerHTML = "<a target='_blank' href='https://pratt.libwizard.com/f/reportaproblem?&issn=" + otherlib_issn + "'><i class='fas fa-exclamation-triangle'></i>&nbsp;&nbsp;Report a Problem</a>";
     }
 
 		if (otherlib_oclc.length > 0) {
@@ -296,6 +300,7 @@
 			editionlink = "<a href='http://summit.worldcat.org/oclc/" + otherlib_oclc+ "/editions/' target='_blank'>Search Worldcat for other editions of this title</a>";
 			//document.getElementById("otherEditionLinks").innerHTML  = "<a href='http://summit.worldcat.org/oclc/" + otherlib_oclc+ "/editions/' target='_blank'>Search Worldcat for other editions of this title</a>";
       document.getElementById("pdf-request").innerHTML = "<a class='pratt-btn' target='_blank' href='https://pratt.libwizard.com/f/document-delivery?&oclc=" + otherlib_oclc + "'><i class='far fa-file-pdf'></i>&nbsp;&nbsp;Request a PDF Scan</a>";
+      document.getElementById("reportProblem").innerHTML = "<a target='_blank' href='https://pratt.libwizard.com/f/reportaproblem?&oclc=" + otherlib_oclc + "'><i class='fas fa-exclamation-triangle'></i>&nbsp;&nbsp;Report a Problem</a>";
 			}
 
 		else if (otherlib_isbn.length > 0) {
