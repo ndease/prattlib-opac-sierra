@@ -251,6 +251,7 @@
 
 		try{
 		var tr = document.getElementsByTagName('TR');
+    var permalink = document.querySelector("#ICON_RECORDLINK > a").href;
 		var otherlib_oclc = "", otherlib_isbn = "",otherlib_issn = "", bib_author="" ;
 		for(i = 0; i < tr.length; i++) {
 			var x=tr[i].getElementsByTagName('TD');
@@ -285,12 +286,10 @@
 		if(otherlib_isbn.length > 0){
 			document.getElementById("findinworldcat").innerHTML = "<a href='http://www.worldcat.org/search?q=bn:" + otherlib_isbn + "'>Find it in Worldcat</a>";
                         document.getElementById("cnylink").innerHTML = "<a href='http://connectny.info/search~S0/?searchtype=i&searcharg=" + otherlib_isbn + "'>Find it in ConnectNY</a>";
-                        document.getElementById("pdf-request").innerHTML = "<a class='pratt-btn' target='_blank' href='https://pratt.libwizard.com/f/document-delivery?&isbn=" + otherlib_isbn + "'><i class='far fa-file-pdf'></i>&nbsp;&nbsp;Request a PDF Scan</a>";
                         document.getElementById("reportProblem").innerHTML = "<a target='_blank' href='https://pratt.libwizard.com/f/reportaproblem?&isbn=" + otherlib_isbn + "'><i class='fas fa-exclamation-triangle'></i>&nbsp;&nbsp;Report a Problem</a>";
 		}
 
     if(otherlib_issn.length > 0){
-      document.getElementById("pdf-request").innerHTML = "<a class='pratt-btn' target='_blank' href='https://pratt.libwizard.com/f/document-delivery?&issn=" + otherlib_issn + "'><i class='far fa-file-pdf'></i>&nbsp;&nbsp;Request a PDF Scan</a>";
       document.getElementById("reportProblem").innerHTML = "<a target='_blank' href='https://pratt.libwizard.com/f/reportaproblem?&issn=" + otherlib_issn + "'><i class='fas fa-exclamation-triangle'></i>&nbsp;&nbsp;Report a Problem</a>";
     }
 
@@ -299,7 +298,6 @@
 			document.getElementById("bookjacket").innerHTML = otherlib_oclc; //insert google book jacket
 			editionlink = "<a href='http://summit.worldcat.org/oclc/" + otherlib_oclc+ "/editions/' target='_blank'>Search Worldcat for other editions of this title</a>";
 			//document.getElementById("otherEditionLinks").innerHTML  = "<a href='http://summit.worldcat.org/oclc/" + otherlib_oclc+ "/editions/' target='_blank'>Search Worldcat for other editions of this title</a>";
-      document.getElementById("pdf-request").innerHTML = "<a class='pratt-btn' target='_blank' href='https://pratt.libwizard.com/f/document-delivery?&oclc=" + otherlib_oclc + "'><i class='far fa-file-pdf'></i>&nbsp;&nbsp;Request a PDF Scan</a>";
       document.getElementById("reportProblem").innerHTML = "<a target='_blank' href='https://pratt.libwizard.com/f/reportaproblem?&oclc=" + otherlib_oclc + "'><i class='fas fa-exclamation-triangle'></i>&nbsp;&nbsp;Report a Problem</a>";
 			}
 
@@ -366,6 +364,7 @@
     }
     else
     {
+      document.getElementById("pdf-request").innerHTML = "<a class='pratt-btn' target='_blank' href='https://pratt.libwizard.com/f/document-delivery?&rft_id=" + permalink + "'><i class='far fa-file-pdf'></i>&nbsp;&nbsp;Request a PDF Scan</a>";
       document.getElementById("pdf-request").style.display = "block";
     }
 
