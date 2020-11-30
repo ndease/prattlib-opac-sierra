@@ -368,6 +368,9 @@
  else if ($('td:contains("Pratt Institute Archives")').length > 0) {
       document.getElementById("pdf-request").style.display = "none";
     }
+ else if ($('td:contains("Equipment Loan Office")').length > 0) {
+      document.getElementById("pdf-request").style.display = "none";
+    }
     else
     {
       document.getElementById("pdf-request").innerHTML = "<a class='pratt-btn' target='_blank' href='https://pratt.libwizard.com/f/document-delivery?&rft_id=" + permalink + "'><i class='far fa-file-pdf'></i>&nbsp;&nbsp;Request a PDF Scan</a>";
