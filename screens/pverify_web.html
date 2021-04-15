@@ -96,8 +96,9 @@ Password:
 <!--{ifneedspin}-->
 <!--{pinresetrequest}-->
 <!--{xif}-->
+<div id="login-button">
 <!--{submit}-->
-<input type="submit" class="submitHidden">
+</div>
 </div>
 </fieldset>
 <!--{formend}-->
@@ -110,3 +111,28 @@ Password:
 try { document.forms[0].elements[1].focus(); }
 catch(err) {}
 //--><!]]></script>
+
+<!--fix login form for accessibility-->
+<script>
+  document.getElementById("nameprompt").innerHTML= "Full Name";
+  document.querySelector("#accessibleForm > form > fieldset > div:nth-child(2) > input").setAttribute("id", "name");
+  document.querySelector("#accessibleForm > form > fieldset > div:nth-child(3) > input[type=PASSWORD]").setAttribute("id", "code");
+  document.getElementById("name").setAttribute("class","form-control");
+  document.getElementById("code").setAttribute("class","form-control");
+  document.querySelector("#login-button > div > a").innerHTML = "<button href='#' onClick='javascript:patform.submit()' class='btn btn-primary' id='ICON_BUT_PAT_SUBMIT'>Submit</button>"
+
+  var elems = document.getElementsByClassName('formLabelExample');
+for (var i=0;i<elems.length;i+=1){
+  elems[i].style.display = 'none';
+}
+  </script>
+
+  <style>
+    @media screen and (min-width: 900px) {
+    .form1Part{
+      width:600px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+  }
+    </style>
