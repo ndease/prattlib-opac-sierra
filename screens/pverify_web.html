@@ -104,7 +104,17 @@ Password:
 <!--{formend}-->
 
 </div>
+<div class="container">
+  <a class="d-block text-center" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+      For Friends of the Library
+    </a>
 
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    Members of the Friends of the Library program may log into their accounts by using their full name and the barcode found on their 'Friends of the Library' card. Enter your barcode in the field marked "Pratt ID Number"
+    </div>
+</div>
+</div>
 </div><!-- pageContentInner -->
 <!--{botlogo}-->
 <script type="text/javascript"><!--//--><![CDATA[//><!--
@@ -115,6 +125,7 @@ catch(err) {}
 <!--fix login form for accessibility-->
 <script>
   document.getElementById("nameprompt").innerHTML= "Full Name";
+  // document.getElementById("codeprompt").innerHTML= "Pratt ID Number";
   document.querySelector("#accessibleForm > form > fieldset > div:nth-child(2) > input").setAttribute("id", "name");
   document.querySelector("#accessibleForm > form > fieldset > div:nth-child(3) > input[type=PASSWORD]").setAttribute("id", "code");
   document.getElementById("name").setAttribute("class","form-control");
