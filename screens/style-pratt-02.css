@@ -418,14 +418,14 @@ div.bookingsVerify { padding:0; margin-top:18px; }
   border-radius: .25rem;
   background-color: #FFB900;
   font-family: "ApercuRegular", Helvetica, Arial, sans-serif !important;
-  display:block;
+  /* display:block; */
  }
 
  .briefcitRequest #ICON_REQUEST{
    text-align:left;
    padding: .5rem 0 .5rem 0;
    font-family: "ApercuRegular", Helvetica, Arial, sans-serif !important;
-   display:block;
+   /* display:block; */
    font-size:1.15em;
  }
 
@@ -443,9 +443,9 @@ div.bookingsVerify { padding:0; margin-top:18px; }
   text-decoration: none;
 }
 
- .briefcitActions > a{
+ /* .briefcitActions > a{
    color:black !important;
- }
+ } */
 
 .briefcitAddlCopies { font-size:90%; }
 .briefcitAddlCopies { margin: 10px 10px 30px 3px; }
@@ -1883,3 +1883,31 @@ header{
 display:none !important;
 }
 }
+
+/*fix 856 links to only show proxied resources */
+div.briefcitActions > a{
+  display:none;
+}
+
+.briefcitActions #ICON_856LINK{
+  display:block;
+  color:black;
+}
+
+div.briefcitActions > a[href^="https://ezproxy.pratt.edu"] { display: block; }
+div.briefcitActions > a[href^="http://ezproxy.pratt.edu"] { display: block; }
+div.briefcitActions > a[href^=" https://ezproxy.pratt.edu"] { display: block; }
+div.briefcitActions > a[href^=" http://ezproxy.pratt.edu"] { display: block; }
+div.briefcitActions > a[href^="https://login.ezproxy.pratt.edu"] { display: block; }
+div.briefcitActions > a[href^="http://login.ezproxy.pratt.edu"] { display: block; }
+div.briefcitActions > a[href^="https://pratt.kanopystreaming.com"] { display: block; }
+div.briefcitActions > a[href^="http://pratt.kanopystreaming.com"] { display: block; }
+div.briefcitActions > a[href^="http://pratt.kanopy.com"] { display: block; }
+div.briefcitActions > a[href^="https://pratt.kanopy.com"] { display: block; }
+div.briefcitActions > a[href^="https://libmma.contentdm.oclc.org"] { display: block; }
+div.briefcitActions > a[href^="http://libmma.contentdm.oclc.org"] { display: block; }
+div.briefcitActions > a[href^="http://archive.org"] { display: block; }
+div.briefcitActions > a[href^="https://archive.org"] { display: block; }
+div.briefcitActions > a[href^="https://talks.pratt.edu/"] { display: block; }
+div.briefcitActions > a[href^="http://talks.pratt.edu/"] { display: block; }
+/*end fix 856 links */
