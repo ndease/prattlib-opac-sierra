@@ -1,0 +1,251 @@
+# -----------------------------------------------------
+# Converted by cvpubdef from pubdef
+# -----------------------------------------------------
+#
+#
+# converted by cvpubdef from HOLDINGS_POS: atpeR
+#
+#
+# converted from HOLDINGS_POS field tag: 'a'
+#
+b|a|100|-6|Author||b|
+b|a|110|-6|Corporate Author||b|
+b|a|111|-6|Conference||b|
+b|a||-6|Author||b|
+#
+# converted from HOLDINGS_POS field tag: 't'
+#
+b|t|130|-6|Uniform Title||b|
+b|t|240|-6|Uniform Title||b|
+b|t|245|-6|Title||b|
+b|t||-6|Title||b|
+#
+# converted from HOLDINGS_POS field tag: 'p'
+#
+#b|p|260|-6|Imprint||b|
+#b|p|270|-6|Address||b|
+b|p||-6|Publication Info||b|
+#
+# converted from HOLDINGS_POS field tag: 'e'
+#
+b|e|250|-6|Edition||b|
+b|e||-6|Edition||b|
+#
+# end HOLDINGS_POS
+#
+#
+# next line added by cvpubdef
+b|H|||||
+#
+
+b|r|300|-6|Description||b|
+b|r|306|-68|Playing Time||b|
+b|r|307|-68|Hours||b|
+b|r|310|-68|Current Frequency||b|
+b|r|315|-6|||b|
+b|r|321|-6|Former Frequency||b|
+b|r|336|-b26789|Content||b|
+b|r|337|-b26789|Media||b|
+b|r|338|-b26789|Carrier||b|
+b|r|340|-01268|Physical Medium||b|
+b|r|342|-268|Geospatial Data||b|
+b|r|343|-68|Planar Data||b|
+b|r|344|-01268|Sound Characteristics||b|
+b|r|345|-01268|Projection Characteristics||b|
+b|r|346|-01268|Video Characteristics||b|
+b|r|347|-01268|Digital File Characteristics||b|
+b|r|350|-6|||b|
+b|r|35[1257]|-6|Description||b|
+b|r|362|-6|Publication Date||b|
+b|r|36[56]|-6|Description||b|
+b|r|380|-01268|Form of Work||b|
+b|r|385|-2n|Audience Characteristics||b|
+b|r|386|-2n|Contributor Characteristics||b|
+b|r||-6|Description||b|
+b|s|4..|-6|Series||b|
+b|s|8..|-6|Series||b|
+b|s||-6|Series||b|
+b|n|500|-567|Note||b|
+b|n|501|-567|With:||b|
+b|n|502|-67|Thesis||b|
+b|n|504|-67|Bibliography||b|
+b|n|505|-67|Contents||b|
+b|n|506|-567|Access||b|
+b|n|507|-67|Scale||b|
+b|n|508|-67|Credits||b|
+b|n|510|-67|Indexed In:||b|
+b|n|511[^1]|-67|Performer||b|
+b|n|5111|-67|Cast||b|
+b|n|513|-67|Type Of Report||b|
+b|n|514|-67|Data Quality||b|
+b|n|515|-67|Numbering||b|
+b|n|516|-67|File Type||b|
+b|n|518|-67|Event||b|
+b|n|520|-67|Summary||b|
+b|n|521|-67|Audience||b|
+b|n|522|-67|Coverage||b|
+b|n|524|-67|Cite As:||b|
+b|n|525|-67|Supplement||b|
+b|n|526|-567|Study Program||b|
+b|n|530|-67|Form||b|
+b|n|533|-67|Reproduction||b|
+b|n|534|-67|Original Version||b|
+b|n|535|-67|Original Location||b|
+b|n|536|-67|Funding||b|
+b|n|538|-67|System Details||b|
+b|n|540|-567|Terms Of Use||b|
+b|n|541|-567|Source||b|
+b|n|544|-67|Location||b|
+b|n|545|-67|Biography||b|
+b|n|546|-67|Language||b|
+b|n|547|-67|Former Title||b|
+b|n|550|-67|Issued By||b|
+b|n|552|-67|Entity||b|
+b|n|555[^0]|-67|Indexes||b|
+b|n|5550|-67|Finding Aids||b|
+b|n|556|-67|Documentation||b|
+b|n|561|-567|Provenance||b|
+b|n|562|-567|Copy/Version||b|
+b|n|563|-567|Binding||b|
+b|n|565|-67|Case File||b|
+b|n|567|-67|Methodology||b|
+b|n|580|-67|Linking Entry||b|
+b|n|581|-67|Publications||b|
+#
+#suppress 583.0
+#
+#b|n|583|-x567|Processing Action||b|
+b|n|5830|||||
+#
+#suppress 583.0
+#
+b|n|584|-567|Frequency Of Use||b|
+b|n|585|-567|Exhibitions||b|
+b|n|586|-67|Awards||b|
+b|n|59[0-9]|-67|Local Note||b|
+b|n||-67|Note||b|
+b|y|856|u|Url||b|
+b|y|[^8]..|u|||b|
+b|y|8[^5].|u|||b|
+b|y|85[^6]|u|||b|
+b|y||u|Misc.||b|
+# Suppresses certain 6XX fields with 2nd indicator 4, 6 or 7. JAM 2015-12-2
+b|d|6[0-8][01234678].[467]|-02346|||b|
+b|d|6[013][01].[01]|-26|Subject||b|
+b|d|648|-26|Chronological Term||b|
+b|d|65[01].[01]|-026|Subject||b|
+b|d|653|-26|Indexed Term||b|
+b|d|654|-26|Topical Term||b|
+b|d|655..|-026|Genre/Form||b|
+b|d|656|-26|Occupation||b|
+b|d|657|-26|Function||b|
+b|d|658|-26|Curriculum Objective||b|
+b|d|662|-26|Place Name||b|
+b|d|69[0-9]..|-26|Local Subject||b|
+b|d||-026|Subject||b|
+b|d|6...[23456]|&|||b|
+b|b|7[012][01]..|-56|Added Author||b|
+b|b||-6|Added Author||b|
+b|u|210|-6|Abbreviated Title||b|
+b|u|222|-6|Key Title||b|
+b|u|242|-6|Translated Title||b|
+b|u|243|-6|Collective Title||b|
+b|u|2460.|-6|||b|
+b|u|2461 |-6|Note||b|
+b|u|2461[01]|-6|||b|
+b|u|24612|-6|Distinct Title||b|
+b|u|24613|-56|Other Title||b|
+b|u|24614|-6|Cover Title||b|
+b|u|24615|-6|Added Title Page Title||b|
+b|u|24616|-6|Caption Title||b|
+b|u|24617|-6|Running Title||b|
+b|u|24618|-6|Spine Title||b|
+b|u|2462.|-6|||b|
+b|u|24700|-6|Former Title||b|
+b|u|24701|-6|||b|
+b|u|24710|-6|Former Title||b|
+b|u|24711|-6|||b|
+b|u|7[34]0..|-6|Added Title||b|
+b|u||-6|Added Title||b|
+b|h||-6|Holdings||b|
+b|b|700|-6|Added Author||b|
+b|x|780.0|-uwxyz6|Continues||b|
+b|x|780.1|-uwxyz6|Continues In Part||b|
+b|x|780.2|-uwxyz6|Supersedes||b|
+b|x|780.3|-uwxyz6|Supersedes In Part||b|
+b|x|780.4|-uwxyz6|Formed By||b|
+b|x|780.5|-uwxyz6|Absorbed||b|
+b|x|780.6|-uwxyz6|Absorbed In Part||b|
+b|x|780.7|-uwxyz6|Separated From||b|
+b|x||-uwxyz6|Continues||b|
+b|z|785.0|-uwxyz6|Continued By||b|
+b|z|785.1|-uwxyz6|Continued In Part By||b|
+b|z|785.2|-uwxyz6|Superseded By||b|
+b|z|785.3|-uwxyz6|Superseded In Part By||b|
+b|z|785.4|-uwxyz6|Absorbed By||b|
+b|z|785.5|-uwxyz6|Absorbed In Part By||b|
+b|z|785.6|-uwxyz6|Split Into||b|
+b|z|785.7|-uwxyz6|Merged With||b|
+b|z|785.8|-uwxyz6|Changed Back To||b|
+b|z||-uwxyz6|Continued By||b|
+b|w|760|-6|Subseries Of:||b|
+b|w|762|-6|Has Subseries:||b|
+b|w|765|-6|Translation Of:||b|
+b|w|767|-6|Translated As:||b|
+b|w|770|-6|Has Supplement:||b|
+b|w|772|-6|Supplement To:||b|
+b|w|773|-6|In:||b|
+b|w|774|-6|Constituent Unit:||b|
+b|w|775|-6|Other Editions:||b|
+b|w|776|-6|Other Form:||b|
+b|w|777|-6|Issued With:||b|
+b|w|786|-6|Data Source||b|
+b|w|787|-6|Related To||b|
+b|u|799||||b|
+b|u|929||||b|
+b|w||-6|Related To||b|
+b|i|020|-c6|ISBN||b|
+b|o|001|&|OCLC #||b|
+b|a|100|&|Author||b|
+b|i|022|-c26|ISSN||b|
+b|i|024|-6|Standard No.||b|
+b|i|027|-6|Report No.||b|
+b|i|028|-6|Music No.||b|
+b|i||-6|Standard No.||b|
+b|g|074|-6|Gpo Item No.||b|
+b|g|086|-6|Sudoc No.||b|
+b|g||-6|Gov't Document No.||b|
+c|i||+|Identity||b|
+c|C||&|||b|
+c|$||+|Location||b|
+c|n|||Note||b|
+c|h||-8x|Holdings||b|
+c|2||+|Latest Received||b|&nbsp;
+c|3||+|Latest Received||b|
+c|Q||||b|
+e|t|||Resource Name||e|
+e|x|||Alt Resource Name||e|
+e|e|||Description||e|
+e|u|||Trial Information||e|
+e|g|||User Support||e|
+e|f|||Public Note||e|
+e|s|||||e|
+e|w|||||e|
+e|v|||Resource Type||e|
+e|b|||Resource Format||e|
+#
+# end pubdef
+#
+#
+# -----------------------------------------------------
+# Converted by cvpubdef from item_col_width: 1(23),Cv#(30),%
+# -----------------------------------------------------
+i|1||||29|b|
+i|C||||0|b|&nbsp;
+i|v||||0|b|&nbsp;
+i|#||||38|b|
+i|Q||||b|
+i|!|||Notes|0|b
+i|%||||0|b|
+#
+#end converted webpub.def
