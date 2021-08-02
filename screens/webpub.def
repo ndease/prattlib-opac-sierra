@@ -8,14 +8,14 @@
 #
 # converted from HOLDINGS_POS field tag: 'a'
 #
-b|a|100|-6|Author||b|
-b|a|110|-6|Corporate Author||b|
-b|a|111|-6|Conference||b|
+b|a|100|-06|Author||b|
+b|a|110|-06|Corporate Author||b|
+b|a|111|-06|Conference||b|
 b|a||-6|Author||b|
 #
 # converted from HOLDINGS_POS field tag: 't'
 #
-b|t|130|-6|Uniform Title||b|
+b|t|130|-06|Uniform Title||b|
 b|t|240|-6|Uniform Title||b|
 b|t|245|-6|Title||b|
 b|t||-6|Title||b|
