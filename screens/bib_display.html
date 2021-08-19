@@ -380,8 +380,13 @@
       document.getElementById("pdf-request").innerHTML = "<a class='pratt-btn' target='_blank' href='https://pratt.libwizard.com/f/document-delivery?&rft_id=" + permalink + "'><i class='far fa-file-pdf'></i>&nbsp;&nbsp;Request a PDF Scan</a>";
       document.getElementById("pdf-request").style.display = "block";
     }
+    else if ($('td:contains("DUE")').length > 0)
+    {
+      document.getElementById("ICON_BUT_REQUEST").innerHTML = document.getElementById("ICON_BUT_REQUEST").innerHTML = "<i class='far fa-calendar-plus'></i>&nbsp;&nbsp;Place on Hold";
+    }
 
   $('td:contains("AVAILABLE")').append( $(pickupRequest));
+  $('td:contains("DUE")').append( $(pickupRequest));
   document.querySelector("#bookjacket > img").alt="";
   }
 </script>
