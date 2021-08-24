@@ -1674,10 +1674,10 @@ text-decoration: none !important;
     border:none !important;
   }
 
- .bibItemsEntry > td:nth-of-type(1):before { content: "Location"; font-weight: bold;}
- .bibItemsEntry > td:nth-of-type(2):before { content: "Call No."; font-weight: bold;}
- .bibItemsEntry > td:nth-of-type(3):before { content: "Notes"; font-weight: bold;}
- .bibItemsEntry > td:nth-of-type(4):before { content: "Status"; font-weight: bold;}
+ .bibItemsEntry > td:nth-of-type(1):before { content: "Location:"; font-weight: bold;}
+ .bibItemsEntry > td:nth-of-type(2):before { content: "Call No.:"; font-weight: bold;}
+ .bibItemsEntry > td:nth-of-type(3):before { content: "Notes:"; font-weight: bold;}
+ .bibItemsEntry > td:nth-of-type(4):before { content: "Status:"; font-weight: bold;}
  .table tr{background-color:#E4E5E6; border-radius: 5px; margin-bottom:1rem; }
 }
 
