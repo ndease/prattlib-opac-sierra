@@ -1750,6 +1750,10 @@ text-decoration: none !important;
   text-transform:none !important;
 }
 /*standardize book jacket thumbnails */
+span.gbs-thumbnail.gbs-link-to-info > a {
+display: none;
+}
+
 .gbs-thumbnail > img {
     width: 100% !important;
 }
