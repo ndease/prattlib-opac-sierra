@@ -122,6 +122,15 @@ function changeJackets(){
 document.querySelector("#bookjacket > img").alt=""; //insert an empty alt tag as img is decorative
 }
 </script>
+<!--script to add CNY search-->
+<script>
+var searchArgument = document.querySelector("#searcharg").value;
+var searchCNY = document.createElement("a");
+searchCNY.href='https://cny.reshare.indexdata.com/Search/Results?lookfor=' + searchArgument;
+searchCNY.innerText = 'Search ConnectNY';
+searchCNY.target="_blank"
+document.querySelector(".navigationRow > form").appendChild(searchCNY);
+</script>
 <!--initialize tooltips-->
 </div> <!-- fullPage (toplogo.html) -->
 </div> <!-- minHeight (toplogo )-->
