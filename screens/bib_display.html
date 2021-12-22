@@ -300,7 +300,7 @@ text-decoration: none;
 
 		if(otherlib_isbn.length > 0){
 			document.getElementById("findinworldcat").innerHTML = "<a href='http://www.worldcat.org/search?q=bn:" + otherlib_isbn + "'>Find it in Worldcat</a>";
-                        document.getElementById("cnyLink").innerHTML = "<a href='https://cny.reshare.indexdata.com/Search/Results?lookfor=" + otherlib_isbn + "'>Find it in ConnectNY</a>";
+                        document.getElementById("cnyLink").innerHTML = "<a target='_blank' href='https://cny.reshare.indexdata.com/Search/Results?lookfor=" + otherlib_isbn + "'>Find it in ConnectNY</a>";
                         document.getElementById("reportProblem").innerHTML = "<a target='_blank' href='https://pratt.libwizard.com/f/reportaproblem?&isbn=" + otherlib_isbn + "'><i class='fas fa-exclamation-triangle'></i>&nbsp;&nbsp;Report a Problem</a>";
 		}
 
