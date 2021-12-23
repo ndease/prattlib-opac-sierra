@@ -1898,6 +1898,38 @@ div.briefcitActions > a{
   color:black;
 }
 
+
+.lib-site-alert{
+  // padding: 1em;
+  position:relative;
+  width:100%;
+  top:50px;
+  text-align: center;
+  background-color: #FFB900;
+  color:black;
+  display:none;
+}
+
+.lib-site-alert p{
+    font-family:'ApercuMedium', Helvetica, Arial, sans-serif;
+
+}
+
+.lib-site-alert i {
+  padding-top:1em;
+}
+
+.lib-site-alert p > a{
+  text-decoration: underline;
+  color:black;
+  border:none;
+  box-shadow:none;
+}
+.lib-site-alert p > a:hover {
+color: black;
+background-color: transparent;
+}
+
 div.briefcitActions > a[href^="https://ezproxy.pratt.edu"] { display: block; }
 div.briefcitActions > a[href^="http://ezproxy.pratt.edu"] { display: block; }
 div.briefcitActions > a[href^=" https://ezproxy.pratt.edu"] { display: block; }
