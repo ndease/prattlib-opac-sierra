@@ -359,8 +359,6 @@ text-decoration: none;
     }
     else if ($('td:contains("Thesis Collection")').length > 0) {
       document.getElementById("pdf-request").style.display = "none";
-      document.getElementById("thesisStatement").style.display = "block";
-      $('td:contains("LIB USE ONLY")').append("<a class='special-request-btn' target='_blank' href='https://pratt.libwizard.com/f/special-collections-appointment?&rft_id=" + permalink + "'><i class='far fa-calendar-plus'></i>&nbsp;&nbsp;Book Appointment</a>");
     }
  else if ($('td:contains("16mm Film Collection")').length > 0) {
       document.getElementById("pdf-request").style.display = "none";
