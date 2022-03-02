@@ -390,6 +390,7 @@ else if ($('td:contains("Pop-Up Book Collection")').length > 0) {
       document.getElementById("ICON_BUT_REQUEST").innerHTML = document.getElementById("ICON_BUT_REQUEST").innerHTML = "<i class='far fa-calendar-plus'></i>&nbsp;&nbsp;Place on Hold";
     }
 
+  $('td:contains("IN PROCESSING")').append("<a class='special-request-btn' target='_blank' href='https://pratt.libwizard.com/f/processing-request?&rft_id=" + permalink + "'>Request</a>");
   $('td:contains("AVAILABLE")').append( $(pickupRequest));
   //$('td:contains("LIB USE ONLY")').append( $(pickupRequest));
   $('td:contains("DUE")').append( $(pickupRequest));
