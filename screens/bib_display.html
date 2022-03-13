@@ -401,7 +401,7 @@ else if ($('td:contains("Pop-Up Book Collection")').length > 0) {
   $('td:contains("AVAILABLE")').append( $(pickupRequest));
   //$('td:contains("LIB USE ONLY")').append( $(pickupRequest));
   $(pickupRequest).clone().appendTo($('td:contains("DUE")'));
-  $('td:contains("DUE") > a > div').each(function(index, value){
+  $('td:contains("DUE") > a > div').each(function(){
 this.innerHTML = "<i class='far fa-calendar-plus'></i>&nbsp;&nbsp;Place on Hold"});
   document.querySelector("#bookjacket > img").alt="";
 //add CNY link
