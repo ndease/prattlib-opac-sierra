@@ -149,6 +149,13 @@ background-color: #0C77D4;
 color: white;
 text-decoration: none;
 }
+
+.navigationRowRecord > a #ICON_BUT_REQUEST{
+  background-color: transparent;
+  border-radius:0;
+  padding:0;
+  font-size:1em;
+}
 </style>
 <span id="pdf-request"></span>
 <!--{ifhaspatrate}-->
@@ -393,7 +400,9 @@ else if ($('td:contains("Pop-Up Book Collection")').length > 0) {
   $('td:contains("IN PROCESSING")').append("<a class='special-request-btn' target='_blank' href='https://pratt.libwizard.com/f/processing-request?&rft_id=" + permalink + "'>Request</a>");
   $('td:contains("AVAILABLE")').append( $(pickupRequest));
   //$('td:contains("LIB USE ONLY")').append( $(pickupRequest));
-  $('td:contains("DUE")').append( $(pickupRequest));
+  $(pickupRequest).clone().appendTo($('td:contains("DUE")'));
+  $('td:contains("DUE") > a > div').each(function(index, value){
+this.innerHTML = "<i class='far fa-calendar-plus'></i>&nbsp;&nbsp;Place on Hold"});
   document.querySelector("#bookjacket > img").alt="";
 //add CNY link
 $('td:contains("DUE")').append( $(cnyLink));
