@@ -112,12 +112,12 @@ b|n|567|-67|Methodology||b|
 b|n|580|-67|Linking Entry||b|
 b|n|581|-67|Publications||b|
 #
-#suppress 583.0
+#suppress 583
 #
 #b|n|583|-x567|Processing Action||b|
-b|n|5830|||||
+b|n|583|||||
 #
-#suppress 583.0
+#suppress 583
 #
 b|n|584|-567|Frequency Of Use||b|
 b|n|585|-567|Exhibitions||b|
