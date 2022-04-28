@@ -78,11 +78,76 @@ obj.submit();
 
 </div><!-- browseSearchtool -->
 </div><!-- form1Part -->
+<!-- New Books Slider -->
+<style>
+#newbooks a {
+    font-size: .8em;
+    color: black;
+    text-decoration: none;
+}
+</style>
+                <div class="mt-5 mb-5">
+                <h2 class="text-center">New arrivals</h2><hr>
+<div style="height:200px;" id="newbooks-loading">
+			<img style="display:block; margin-top:84px;margin-left:auto; margin-right:auto;"src="https://library.pratt.edu/img/loader.gif">
+		</div>
+		<div id="newbooks"></div>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#newbooks').hide();
+				getNewBooks("https://cat.pratt.edu/feeds/newmaterials.xml", "#newbooks");
+			});
+
+			$(document).ajaxStop(function(){
+			// $('#newbooks').lightSlider({
+			// 	pager: false,
+			// });
+			$('#newbooks-loading').hide();
+			$('#newbooks').show();
+			$('#newbooks').slick({
+    dots: false,
+ infinite: true,
+ speed: 100,
+ slidesToShow: 6,
+ slidesToScroll: 4,
+ responsive: [
+   {
+     breakpoint: 1024,
+     settings: {
+       slidesToShow: 3,
+       slidesToScroll: 3,
+       infinite: true,
+       dots: true
+     }
+   },
+   {
+     breakpoint: 600,
+     settings: {
+       slidesToShow: 2,
+       slidesToScroll: 2
+     }
+   },
+   {
+     breakpoint: 480,
+     settings: {
+       slidesToShow: 1,
+       slidesToScroll: 1
+     }
+   }
+   // You can unslick at a given breakpoint now by adding:
+   // settings: "unslick"
+   // instead of a settings object
+ ]
+  });
+			});
+		</script>
+		<script src="https://library.pratt.edu/js/slick.min.js"></script>
+</div>
+<!-- end new books -->
 <div class="row">
   <div class="col-lg-4 col-sm-6 mb-4">
   <div>
     <div class="card-body">
-      <i class="main-icons fas fa-user-circle fa-lg"></i>
       <h2 class="card-title">
         <a class="header-link" href="patroninfo">Library Account</a><hr>
       </h2>
@@ -95,7 +160,6 @@ obj.submit();
 <div class="col-lg-4 col-sm-6 mb-4">
       <div>
         <div class="card-body">
-          <i class="fas fa-globe main-icons fa-lg"></i>
           <h2 class="card-title">
             <a class="header-link" href="https://cny.reshare.indexdata.com/MyResearch/UserLogin">ConnectNY</a><hr>
           </h2>
@@ -108,7 +172,6 @@ obj.submit();
     <div class="col-lg-4 col-sm-6 mb-4">
   <div>
     <div class="card-body">
-      <i class="fas fa-lock main-icons fa-lg"></i>
       <h2 class="card-title">
         <a class="header-link" href="search/r">Course Reserves</a><hr>
       </h2>
