@@ -361,12 +361,15 @@ text-decoration: none;
     else if ($('td:contains("Thesis Collection")').length > 0) {
       document.getElementById("pdf-request").style.display = "none";
     }
+    else if ($('td:contains("Zine Collection")').length > 0) {
+      document.getElementById("pdf-request").style.display = "none";
+    }
  else if ($('td:contains("16mm Film Collection")').length > 0) {
       document.getElementById("pdf-request").style.display = "none";
     }
  else if ($('td:contains("Artists\' Books Collection")').length > 0) {
      document.getElementById("pdf-request").innerHTML = "<a class='pratt-btn' target='_blank' href='https://pratt.libwizard.com/f/document-delivery?&rft_id=" + permalink + "'><i class='far fa-file-pdf'></i>&nbsp;&nbsp;Request a PDF Scan</a>";
-     document.getElementById("pdf-request").style.display = "block";
+     document.getElementById("pdf-request").style.display = "none";
       }
 else if ($('td:contains("Special Collections Folios")').length > 0) {
   $('td:contains("LIB USE ONLY")').append("<a class='special-request-btn' target='_blank' href='https://pratt.libwizard.com/f/special-collections-appointment?&rft_id=" + permalink + "'><i class='far fa-calendar-plus'></i>&nbsp;&nbsp;Book Appointment</a>");
@@ -375,7 +378,7 @@ else if ($('td:contains("Special Collections Folios")').length > 0) {
       }
 else if ($('td:contains("Pop-Up Book Collection")').length > 0) {
   document.getElementById("pdf-request").innerHTML = "<a class='pratt-btn' target='_blank' href='https://pratt.libwizard.com/f/document-delivery?&rft_id=" + permalink + "'><i class='far fa-file-pdf'></i>&nbsp;&nbsp;Request a PDF Scan</a>";
-  document.getElementById("pdf-request").style.display = "block";
+  document.getElementById("pdf-request").style.display = "none";
           }
  else if ($('td:contains("Equipment Loan Office")').length > 0) {
       document.getElementById("pdf-request").style.display = "none";
