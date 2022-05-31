@@ -166,6 +166,7 @@ IMAGE_MATTYPE2=/screens/media_book.gif
 IMAGE_MATTYPE3=/screens/media_zine.gif
 IMAGE_MATTYPE4=/screens/media_bluray.gif
 IMAGE_MATTYPE5=/screens/media_resource.gif
+IMAGE_MATTYPE6=/screens/media_streaming.gif
 INDEX_EXT=oi
 MEDIA=2
 NO_COPIES=Currently no copies available
