@@ -9,6 +9,18 @@ html,  body  {
     font-family: 'GraphikRegular', arial, sans-serif;
 }
 
+#skipNav a:focus {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 0;
+    margin-bottom: 3px;
+    background: white;
+    color: black;
+    padding: 10px;
+    z-index: 9999;
+}
+
 /* || Pratt typography */
 
 @font-face {
