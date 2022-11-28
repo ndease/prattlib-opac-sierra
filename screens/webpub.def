@@ -131,20 +131,20 @@ b|y|85[^6]|u|||b|
 b|y||u|Misc.||b|
 # Suppresses certain 6XX fields with 2nd indicator 4, 6 or 7. JAM 2015-12-2
 b|d|6[0-8][01234678].[467]|-02346|||b|
-b|d|6[013][01].[01]|-26|Subject||b|
-b|d|648|-26|Chronological Term||b|
+b|d|6[013][01].[01]|-026|Subject||b|
+b|d|648|-026|Chronological Term||b|
 b|d|65[01].[01]|-026|Subject||b|
-b|d|653|-26|Indexed Term||b|
-b|d|654|-26|Topical Term||b|
+b|d|653|-026|Indexed Term||b|
+b|d|654|-026|Topical Term||b|
 b|d|655..|-026|Genre/Form||b|
-b|d|656|-26|Occupation||b|
-b|d|657|-26|Function||b|
-b|d|658|-26|Curriculum Objective||b|
-b|d|662|-26|Place Name||b|
-b|d|69[0-9]..|-26|Local Subject||b|
+b|d|656|-026|Occupation||b|
+b|d|657|-026|Function||b|
+b|d|658|-026|Curriculum Objective||b|
+b|d|662|-026|Place Name||b|
+b|d|69[0-9]..|-026|Local Subject||b|
 b|d||-026|Subject||b|
 b|d|6...[23456]|&|||b|
-b|b|7[012][01]..|-56|Added Author||b|
+b|b|7[012][01]..|-056|Added Author||b|
 b|b||-6|Added Author||b|
 b|u|210|-6|Abbreviated Title||b|
 b|u|222|-6|Key Title||b|
@@ -165,42 +165,45 @@ b|u|24700|-6|Former Title||b|
 b|u|24701|-6|||b|
 b|u|24710|-6|Former Title||b|
 b|u|24711|-6|||b|
-b|u|7[34]0..|-6|Added Title||b|
+b|u|7[34]0..|-06|Added Title||b|
 b|u||-6|Added Title||b|
 b|h||-6|Holdings||b|
-b|b|700|-6|Added Author||b|
-b|x|780.0|-uwxyz6|Continues||b|
-b|x|780.1|-uwxyz6|Continues In Part||b|
-b|x|780.2|-uwxyz6|Supersedes||b|
-b|x|780.3|-uwxyz6|Supersedes In Part||b|
-b|x|780.4|-uwxyz6|Formed By||b|
-b|x|780.5|-uwxyz6|Absorbed||b|
-b|x|780.6|-uwxyz6|Absorbed In Part||b|
-b|x|780.7|-uwxyz6|Separated From||b|
-b|x||-uwxyz6|Continues||b|
-b|z|785.0|-uwxyz6|Continued By||b|
-b|z|785.1|-uwxyz6|Continued In Part By||b|
-b|z|785.2|-uwxyz6|Superseded By||b|
-b|z|785.3|-uwxyz6|Superseded In Part By||b|
-b|z|785.4|-uwxyz6|Absorbed By||b|
-b|z|785.5|-uwxyz6|Absorbed In Part By||b|
-b|z|785.6|-uwxyz6|Split Into||b|
-b|z|785.7|-uwxyz6|Merged With||b|
-b|z|785.8|-uwxyz6|Changed Back To||b|
+b|b|700|-06|Added Author||b|
+b|x|780.0|-uwxyz06|Continues||b|
+b|x|780.1|-uwxyz06|Continues In Part||b|
+b|x|780.2|-uwxyz06|Supersedes||b|
+b|x|780.3|-uwxyz06|Supersedes In Part||b|
+b|x|780.4|-uwxyz06|Formed By||b|
+b|x|780.5|-uwxyz06|Absorbed||b|
+b|x|780.6|-uwxyz06|Absorbed In Part||b|
+b|x|780.7|-uwxyz06|Separated From||b|
+b|x||-uwxyz06|Continues||b|
+b|z|785.0|-uwxyz06|Continued By||b|
+b|z|785.1|-uwxyz06|Continued In Part By||b|
+b|z|785.2|-uwxyz06|Superseded By||b|
+b|z|785.3|-uwxyz06|Superseded In Part By||b|
+b|z|785.4|-uwxyz06|Absorbed By||b|
+b|z|785.5|-uwxyz06|Absorbed In Part By||b|
+b|z|785.6|-uwxyz06|Split Into||b|
+b|z|785.7|-uwxyz06|Merged With||b|
+b|z|785.8|-uwxyz06|Changed Back To||b|
 b|z||-uwxyz6|Continued By||b|
-b|w|760|-6|Subseries Of:||b|
-b|w|762|-6|Has Subseries:||b|
-b|w|765|-6|Translation Of:||b|
-b|w|767|-6|Translated As:||b|
-b|w|770|-6|Has Supplement:||b|
-b|w|772|-6|Supplement To:||b|
-b|w|773|-6|In:||b|
-b|w|774|-6|Constituent Unit:||b|
-b|w|775|-6|Other Editions:||b|
-b|w|776|-6|Other Form:||b|
-b|w|777|-6|Issued With:||b|
-b|w|786|-6|Data Source||b|
-b|w|787|-6|Related To||b|
+b|w|760|-06|Subseries Of:||b|
+b|w|762|-06|Has Subseries:||b|
+b|w|765|-06|Translation Of:||b|
+b|w|767|-06|Translated As:||b|
+b|w|770|-06|Has Supplement:||b|
+b|w|772|-06|Supplement To:||b|
+b|w|773|-06|In:||b|
+b|w|774|-06|Constituent Unit:||b|
+b|w|775|-06|Other Editions:||b|
+#Suppress Other Form 
+#b|w|776|-06|Other Form:||b|
+b|w|776..|-06|||b|
+# end Other Form suppression
+b|w|777|-06|Issued With:||b|
+b|w|786|-06|Data Source||b|
+b|w|787|-06|Related To||b|
 b|u|799||||b|
 b|u|929||||b|
 b|w||-6|Related To||b|
