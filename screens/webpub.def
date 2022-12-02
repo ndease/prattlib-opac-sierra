@@ -136,7 +136,8 @@ b|d|648|-026|Chronological Term||b|
 b|d|65[01].[01]|-026|Subject||b|
 b|d|653|-026|Indexed Term||b|
 b|d|654|-026|Topical Term||b|
-b|d|655..|-026|Genre/Form||b|
+#only suppress 655.4
+b|d|655.[012356789]|-026|Genre/Form||b|
 b|d|656|-026|Occupation||b|
 b|d|657|-026|Function||b|
 b|d|658|-026|Curriculum Objective||b|
