@@ -142,7 +142,7 @@ a:hover  { color: black; text-decoration: underline; }
 .advancedSearch label { text-align:right; }
 .advancedSearch fieldset fieldset legend { visibility:hidden; line-height:0px; }
 
-.advmsg {color: #FF0000; }
+.advmsg {color: #B30000; }
 .authmsg1 { font-style: italic; }
 .authmsg2 { font-weight: bold; }
 .availLimMessage { font-style:normal; }
@@ -329,7 +329,7 @@ table.bibResourceTable { border:0; }
 
 .bibSearchHistory {  }
 
-.bibSearchHistory noscript h2 { font-size:1em; margin:-3px 10px 0 0; color:#FF0000; }
+.bibSearchHistory noscript h2 { font-size:1em; margin:-3px 10px 0 0; color:#B30000; }
 
 
 */ Volume table in briefcit and bib display /*
@@ -934,7 +934,7 @@ div .confirmValue { padding-top:3px; }
 .navigationRow a:hover { text-decoration:underline; }*/
 .navigationRow { clear:both; text-align:center; }
 .navigationRow > form { margin-top:5px; margin-bottom:0; }
-.navigationRow noscript h2 { font-size:1em; margin:-3px 10px 0 0; color:#FF0000; }
+.navigationRow noscript h2 { font-size:1em; margin:-3px 10px 0 0; color:#B30000; }
 .navigationRow select { position:absolute; right:24px; top:30px; width:200px; }
 .navigationRow option { position:absolute; right:24px; top:30px; }
 
@@ -1059,7 +1059,7 @@ tr.patFuncFinesTotal { background:#ECECEC; }
 
 .patFuncHeaders th {font-size:.8088em; }
 
-.patFuncRenewCount { font-style: italic; color: red; }
+.patFuncRenewCount { font-style: italic; color: #B30000; }
 
 th.patFuncTitle { background:#FFFFFF; border:1px solid #D1D8DD; font-weight:bold; font-size:.8824em; padding:2px; }
 tr.patFuncTitle { background:#FFFFFF; border:1px solid #D1D8DD; font-weight:bold; font-size:.8824em; padding:2px; }
@@ -1457,7 +1457,7 @@ tr.highlight { background:#9CCAD5; }
 
 .coverage em { font-style: normal; }
 
-.noresources { color: red; font-size: 1.2em; font-weight: bold;}
+.noresources { color: #B30000; font-size: 1.2em; font-weight: bold;}
 
 
 /* LIGHTBOX */
@@ -1898,6 +1898,13 @@ div.briefcitActions > a{
   color:black;
 }
 
+.msg{
+  color:#B30000;
+}
+
+.errormessage {
+    color: #B30000;
+}
 
 .lib-site-alert{
   // padding: 1em;
