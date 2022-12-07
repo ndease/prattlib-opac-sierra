@@ -121,8 +121,11 @@
   <script src="https://library.pratt.edu/js/alert.js?v=1640273428" defer></script>
 <!--script to fix eresource links-->
 <script>
-window.onload=changeJackets;
-function changeJackets(){
+window.onload=accessibilityUpdates;
+function accessibilityUpdates(){
+document.querySelectorAll(".briefcitMark > input").forEach(item => item.setAttribute("aria-label", "select this item")); //add label to checkboxes
+document.querySelector("input[name='availlim']").setAttribute("aria-label","Limit search to available items"); //add label to limiter checkbox
+document.querySelector("input[name='jumpto']").setAttribute("aria-label","Locate in results"); //add label to jump to results
 document.querySelector("#bookjacket > img").alt=""; //insert an empty alt tag as img is decorative
 }
 </script>
