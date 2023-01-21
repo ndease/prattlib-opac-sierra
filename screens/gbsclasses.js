@@ -335,22 +335,22 @@ function gbsProcessSpan(spanElem) {
     };
 
     // wrap the span element in a link to bookinfo[bookInfoProp]
-    function linkTo(mReq, bookInfoProp, target) {
-        mReq.success.push(function (mReq, bookinfo) {
-            if (bookinfo[bookInfoProp] === undefined)
-                return;
+    // function linkTo(mReq, bookInfoProp, target) {
+    //     mReq.success.push(function (mReq, bookinfo) {
+    //         if (bookinfo[bookInfoProp] === undefined)
+    //             return;
 
-            var p = mReq.span.parentNode;
-            var s = mReq.span.nextSibling;
-            p.removeChild(mReq.span);
-            var a = document.createElement("a");
-            a.setAttribute("href", bookinfo[bookInfoProp]);
-            if (target != undefined)
-                a.setAttribute("target", "_" + target);
-            a.appendChild(mReq.span);
-            p.insertBefore(a, s);
-        });
-    }
+    //         var p = mReq.span.parentNode;
+    //         var s = mReq.span.nextSibling;
+    //         p.removeChild(mReq.span);
+    //         var a = document.createElement("a");
+    //         a.setAttribute("href", bookinfo[bookInfoProp]);
+    //         if (target != undefined)
+    //             a.setAttribute("target", "_" + target);
+    //         a.appendChild(mReq.span);
+    //         p.insertBefore(a, s);
+    //     });
+    // }
 
     /**
      * See: http://code.google.com/apis/books/getting-started.html
@@ -371,7 +371,7 @@ function gbsProcessSpan(spanElem) {
 
         var m = gbsClass.match(/gbs-link-to-(preview|info|thumbnail)(-(\S+))?/);
         if (m) {
-            linkTo(mReq, m[1] + '_url', m[3]);
+            // linkTo(mReq, m[1] + '_url', m[3]);
             return true;
         }
 
